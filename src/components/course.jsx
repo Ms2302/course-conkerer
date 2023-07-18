@@ -19,12 +19,35 @@ const Product = () => {
             <button className="close" onClick={() => setClose(false)}><AiFillCloseCircle/></button>
             {
                 detail.map((x) =>
-                {                        
+                {                   
+                  if (x.stars !== null){
                     return(
-                        <div className="detail_info">
-                            <h1>{x.title}</h1>
+                      <div className="detail_info">
+                        <div className="img-box">
+                          <img src="" alt={x.title}></img>
                         </div>
-                    )   
+                        <div className="course_detail">
+                          <h2>{x.title}</h2>
+                          <h3>{x.time}</h3>
+                          <h3>{x.stars}</h3>
+                        </div>
+
+                      </div>
+                  )   
+                  }
+                  else{
+                    return(
+                      <div className="detail_info">
+                        <div className="img-box">
+                          <img src="" alt={x.title}></img>
+                        </div>
+                        <div className="course_detail">
+                          <h2>{x.title}</h2>
+                          <p>{x.time}</p>
+                        </div>
+                      </div>
+                  )   
+                  }   
                 })
             }
             </div>
@@ -41,7 +64,7 @@ const Product = () => {
                     <div className="card" key={ curElm.id }>
                       <div className="background">
                         <strong>{ curElm.title }</strong><br></br>
-                        <span id="stars"></span><br></br>
+                        <span id="stars">{ curElm.stars }</span><br></br>
                         <p>Time: { curElm.time }</p><br></br>
                         
                       </div>
