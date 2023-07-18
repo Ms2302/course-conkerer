@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Courses from '../data/CourseDetails.json';
 import { AiFillCloseCircle } from "react-icons/ai";
 const Product = () => {
-        const [detail,setDetail] = useState([]);
-        const [close,setClose] = useState([false]);
+        const [detail, setDetail] = useState([]);
+        const [close, setClose] = useState(false);
         const detailPage = (Product) =>
         {
             setDetail([{...Product}])
