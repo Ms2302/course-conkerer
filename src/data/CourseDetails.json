@@ -1,6 +1,6 @@
 [
-{"id": 1, "title": "Advanced Agile with Scrum and Kanban", "stars": "4.73134 out of 5 stars", "time": "7 weeks"},
-{"id": 2, "title": "How to Buy Cloud - Strategies for Cloud Procurement", "stars": "4.73134 out of 5 stars", "time": "3 weeks"},
+{"id": 1, "title": "Advanced Agile with Scrum and Kanban", "stars": "4.73134 out of 5 stars", "time": "7 weeks", "category": "Tech"},
+{"id": 2, "title": "How to Buy Cloud - Strategies for Cloud Procurement", "stars": "4.73134 out of 5 stars", "time": "3 weeks", "category": "Cooking"},
 {"id": 3, "title": "MedTech: Digital Health and Wearable Technology", "stars": "4.35294 out of 5 stars", "time": "2 weeks"},
 {"id": 4, "title": "MedTech: AI and Medical Robots", "stars": "4.63158 out of 5 stars", "time": "2 weeks"},
 {"id": 5, "title": "Designing Human-Centred AI Products and Services", "stars": null, "time": "6 weeks"},
