@@ -20,18 +20,18 @@ const Card = ({ item }) => {
             <div className="detail_content">
             <button className="close" onClick={() => setClose(false)}><AiFillCloseCircle/></button>
             {
-                item.map((detail) =>
+                detail.map((course) =>
                 {                   
-                  if (detail.stars !== null){
+                  if (course.stars !== null){
                     return(
                       <div className="detail_info">
                         <div className="img-box">
-                          <img src="" alt={detail.title}></img>
+                          <img src="" alt={course.title}></img>
                         </div>
                         <div className="course_detail">
-                          <h2>{detail.title}</h2>
-                          <h3>{detail.time}</h3>
-                          <h3>{detail.stars}</h3>
+                          <h2>{course.title}</h2>
+                          <h3>{course.time}</h3>
+                          <h3>{course.stars}</h3>
                         </div>
 
                       </div>
@@ -41,11 +41,11 @@ const Card = ({ item }) => {
                     return(
                       <div className="detail_info">
                         <div className="img-box">
-                          <img src="" alt={detail.title}></img>
+                          <img src="" alt={course.title}></img>
                         </div>
                         <div className="course_detail">
-                          <h2>{detail.title}</h2>
-                          <p>{detail.time}</p>
+                          <h2>{course.title}</h2>
+                          <p>{course.time}</p>
                         </div>
                       </div>
                   )   
@@ -60,36 +60,36 @@ const Card = ({ item }) => {
     <div className="App">
     {
       
-        item.map((Val) =>
+        item.map((course) =>
         {
 
-            if (Val.stars !== null){
+            if (course.stars !== null){
                 return(
-                    <div className="card" key={ Val.id }>
+                    <div className="card" key={ course.id }>
                       <div className="background">
-                        <strong>{ Val.title }</strong><br></br>
-                        <span id="stars">{ Val.stars }</span><br></br>
-                        <p>Time: { Val.time }</p><br></br>
+                        <strong>{ course.title }</strong><br></br>
+                        <span id="stars">{ course.stars }</span><br></br>
+                        <p>Time: { course.time }</p><br></br>
                         
                       </div>
                       <div className="foreground">
                         <h1>Points: 50</h1>
-                        <button onClick={() => detailPage(Val)}>View</button>      
+                        <button onClick={() => detailPage(course)}>View</button>      
                       </div>
                     </div>
                   )
             }
             else{
                     return(
-                        <div className="card" key={ Val.id }>
+                        <div className="card" key={ course.id }>
                           <div className="background">
-                            <strong>{ Val.title }</strong><br></br>
-                            <p>Time: { Val.time }</p><br></br>
+                            <strong>{ course.title }</strong><br></br>
+                            <p>Time: { course.time }</p><br></br>
                             
                           </div>
                           <div className="foreground">
                             <h1>Points: 50</h1>
-                            <button onClick={() => detailPage(Val)}>View</button>      
+                            <button onClick={() => detailPage(course)}>View</button>      
                           </div>
                         </div>
                       ) 

@@ -18,7 +18,7 @@ const Product = () => {
     return(
       <div className="container-fluid">
         <div className="row">
-          <h1 className="col-12 text-center my-3 fw-bold">Food Filtering App</h1>
+          <h1 className="col-12 text-center my-3 fw-bold">Courses To Choose</h1>
           <Buttons
             filterItem={filterItem}
             setItem={setItem}
@@ -26,7 +26,7 @@ const Product = () => {
           />
           <Card item={item}/>
            
-      </div>
+        </div>
       </div>
      
        

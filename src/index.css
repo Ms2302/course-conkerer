@@ -12,7 +12,7 @@
 
 
 body{
-  background-color: #eaeff3;
+  background: linear-gradient(#8db0cd,#e5ecf4 );
   font-family: 'Inter', sans-serif;
 
 }
@@ -23,11 +23,11 @@ body{
   }
   
 strong, span, p{
-  color: #edf5e1;
+  color: #3d4e6b;
 }
 
 a{
-  color: #05386B;
+  color: #ffff;
 }
   .card{
     float: left;
@@ -39,14 +39,14 @@ a{
     margin-left: 80px;
     margin-top: 65px;
     overflow:hidden;
-    background-color: #000;
+    background-color: #8db0cd;
 
     }
   
   .button {
     display: inline-block;
     padding: 3px 5px;
-    border: 1px solid #000;
+    border: 1px solid #6b4718;
     background: #eee;
   }
   
@@ -62,7 +62,7 @@ a{
     right:0;
     bottom:0;
     transform:translateX(100%);
-    background-color: #05386B;
+    background-color: #e5ecf4;
     transition:.5s ease;
   }
   
@@ -72,6 +72,7 @@ a{
 
 h1{
   font-size: 4em;
+  color: #3d4e6b;
 }
 
 .nav{
@@ -90,7 +91,7 @@ h1{
 .site-title{
   font-size: 2rem;
   font-weight: 600;
-  color: #000;
+  color: #6b4718;
 }
 
 .nav ul{
@@ -178,4 +179,8 @@ h1{
   margin-right: 30px;
   color: #777171;
   
-} 
+}
+
+#home{
+  background-color: linear-gradient(#8db0cd,#e5ecf4 )
+}
