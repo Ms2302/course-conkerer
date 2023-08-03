@@ -50,6 +50,16 @@ a{
     background: #eee;
   }
   
+.enter{
+  color: #5470a1;
+  padding: 3px 5px;
+  border: 2px solid #5470a1;
+  transition: all 0.5s;
+}
+
+.enter:hover{
+  background-color: #f4f8fa;
+}
   .card > div{
     height:100%;
     width:100%;
@@ -76,8 +86,7 @@ h1{
 }
 
 .nav{
-  background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid rgb(212, 217, 219);
+  background-color: rgba(72, 93, 133, 0.7);
   position: relative;
   width: 100%;
   display: flex;
