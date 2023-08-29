@@ -32,6 +32,10 @@ const Card = ({ item }) => {
                           <h2>{course.title}</h2>
                           <h3>{course.time}</h3>
                           <h3>{course.stars}</h3>
+                          <div className="courseLink">
+                            <a href={course.URL} target="_blank">Go To Course</a> 
+                          </div>
+
                         </div>
 
                       </div>
@@ -47,9 +51,13 @@ const Card = ({ item }) => {
                           <h2>{course.title}</h2>
                           <p>{course.time}</p>
                         </div>
+                        <div>
+                        <a className="courseLink" href={course.URL} target="_blank">Go To Course</a> 
+                        </div>
                       </div>
                   )   
-                  }   
+                  }
+                  
                 })
             }
             </div>

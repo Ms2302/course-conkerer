@@ -193,3 +193,10 @@ h1{
 #home{
   background-color: linear-gradient(#8db0cd,#e5ecf4 )
 }
+
+.courseLink{
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+
+}
