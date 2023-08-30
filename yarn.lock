@@ -9,6 +9,11 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
+"@anymod/core@^0.1.51":
+  "integrity" "sha512-4hyrYhnL9VDamXI9YX8YkR3eeuhuyNoyL/LxSBHvyc2D9GE9CKcplTXOjlWPglScEmmnVatHS+Mxd/NX2zIdSw=="
+  "resolved" "https://registry.npmjs.org/@anymod/core/-/core-0.1.51.tgz"
+  "version" "0.1.51"
+
 "@apideck/better-ajv-errors@^0.3.1":
   "integrity" "sha512-9o+HO2MbJhJHjDYZaDxJmSDckvDpiuItEsrIShV0DXeCshXWRHhqYyU/PKHMkuClOmFnZhRd6wzv4vpDu/dRKg=="
   "resolved" "https://registry.npmjs.org/@apideck/better-ajv-errors/-/better-ajv-errors-0.3.3.tgz"
@@ -2017,6 +2022,22 @@
     "@typescript-eslint/types" "5.14.0"
     "eslint-visitor-keys" "^3.0.0"
 
+"@userfront/core@^0.6.5":
+  "integrity" "sha512-j/qRAwkmXshysmeHklsIyYwsjhH0SxuR2sVwAwlQuH147BHHsN5aHWcweCyoPyzLua6ZlNc5rhR5ye6WHXYkDA=="
+  "resolved" "https://registry.npmjs.org/@userfront/core/-/core-0.6.6.tgz"
+  "version" "0.6.6"
+  dependencies:
+    "axios" "^0.21.1"
+    "js-cookie" "^2.2.1"
+
+"@userfront/react@^0.3.4":
+  "integrity" "sha512-LjcSHfEC+6Mkzoppv6/8zY4JKnGEgQGQol5oM1ZAfiA4USGVvw19RY9JhWWEIXcXU5/8oE+jWqI+qjqBNjmp+w=="
+  "resolved" "https://registry.npmjs.org/@userfront/react/-/react-0.3.4.tgz"
+  "version" "0.3.4"
+  dependencies:
+    "@anymod/core" "^0.1.51"
+    "@userfront/core" "^0.6.5"
+
 "@webassemblyjs/ast@1.11.1":
   "integrity" "sha512-ukBh14qFLjxTQNTXocdyksN5QdM28S1CxHt2rdskFyL+xFV7VremuBLVbmCePj+URalXBENx/9Lm7lnhihtCSw=="
   "resolved" "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.11.1.tgz"
@@ -2471,6 +2492,13 @@
   "integrity" "sha512-gd1kmb21kwNuWr6BQz8fv6GNECPBnUasepcoLbekws23NVBLODdsClRZ+bQ8+9Uomf3Sm3+Vwn0oYG9NvwnJCw=="
   "resolved" "https://registry.npmjs.org/axe-core/-/axe-core-4.4.1.tgz"
   "version" "4.4.1"
+
+"axios@^0.21.1":
+  "integrity" "sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz"
+  "version" "0.21.4"
+  dependencies:
+    "follow-redirects" "^1.14.0"
 
 "axobject-query@^2.2.0":
   "integrity" "sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA=="
@@ -4333,7 +4361,7 @@
   "resolved" "https://registry.npmjs.org/flatted/-/flatted-3.2.5.tgz"
   "version" "3.2.5"
 
-"follow-redirects@^1.0.0":
+"follow-redirects@^1.0.0", "follow-redirects@^1.14.0":
   "integrity" "sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w=="
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.9.tgz"
   "version" "1.14.9"
@@ -5553,6 +5581,11 @@
     "@jest/core" "^27.5.1"
     "import-local" "^3.0.2"
     "jest-cli" "^27.5.1"
+
+"js-cookie@^2.2.1":
+  "integrity" "sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ=="
+  "resolved" "https://registry.npmjs.org/js-cookie/-/js-cookie-2.2.1.tgz"
+  "version" "2.2.1"
 
 "js-tokens@^3.0.0 || ^4.0.0", "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
@@ -7282,7 +7315,7 @@
     "lodash.throttle" "^4.1.1"
     "prop-types" "^15.7.2"
 
-"react@*", "react@^15.5.4 || ^16.0.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>=16.8", "react@17.0.2":
+"react@*", "react@^15.5.4 || ^16.0.0 || ^17.0.0", "react@^16 || ^17 || ^18", "react@^17.0.2", "react@>= 16", "react@>=16.8", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

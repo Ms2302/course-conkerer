@@ -20,7 +20,10 @@ export default function Navbar() {
          <Link to={"/login"}>Log in</Link>
         </li>
         <li className="nav__item">
-          <Link to={"/profile"}>Profile</Link>
+          <Link to={"/sign up"}>Sign Up</Link>
+        </li>
+        <li className="nav__item">
+          <Link to={"/dashboard"}>Dashboard</Link>
        </li>
       </ul>
     </nav>

@@ -24,6 +24,7 @@ const Card = ({ item }) => {
                 {                   
                   if (course.stars !== null){
                     return(
+                      <div>
                       <div className="detail_info">
                         <div className="img-box">
                           <img src="" alt={course.title}></img>
@@ -32,13 +33,14 @@ const Card = ({ item }) => {
                           <h2>{course.title}</h2>
                           <h3>{course.time}</h3>
                           <h3>{course.stars}</h3>
-                          <div className="courseLink">
-                            <a href={course.URL} target="_blank">Go To Course</a> 
-                          </div>
-
                         </div>
-
                       </div>
+                      <div className="courseLink">
+                        <a href={course.URL} target="_blank">Go To Course</a> 
+                      </div>
+                      </div>
+                      
+                      
                   )   
                   }
                   else{
