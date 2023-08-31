@@ -10,6 +10,9 @@
   box-sizing: border-box;
 }
 
+html{
+  min-height: 100%;
+}
 
 body{
   background: linear-gradient(#8db0cd,#e5ecf4 );
@@ -207,3 +210,8 @@ h1{
   
 }
 
+.loginPage html{
+  height: 100%;
+  margin: 0;
+
+}

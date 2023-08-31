@@ -8,7 +8,7 @@ const LoginForm = Userfront.build({
 });
 
 export const LoginPage = () => (
-    <div>
+    <div className="loginPage">
       <h1>This is the Login Page</h1>
       <LoginForm />
     </div>
