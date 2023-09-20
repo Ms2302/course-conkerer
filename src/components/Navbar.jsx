@@ -24,13 +24,10 @@ export default function Navbar() {
            <Link to={"/login"}>Log in</Link>
           </li>
           <li className="nav__item">
-            <Link to={"/sign up"}>Sign Up</Link>
+            <Link to={"/signUp"}>Sign Up</Link>
           </li>
-          <li className="nav__item">
-            <Link to={"/dashboard"}>Dashboard</Link>
-         </li>
          <li className="nav__item">
-         <Link to={"/dashboard"}>Points?</Link>
+         <Link to={"/login"}>Points?</Link>
       </li>
         </ul>
       </nav>

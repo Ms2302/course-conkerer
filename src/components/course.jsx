@@ -5,7 +5,12 @@ import Buttons from "./buttons";
 
 const Product = () => {
         const [item, setItem] = useState(Data);
-        const menuItems = [...new Set(Data.map((Val) => Val.category))];
+        var menuItems = [...new Set(Data.map((Val) => Val.category))];
+
+        //For some reason the array has an undefined variable so a temporary fix below removes any undefined items
+        menuItems = menuItems.filter(function( element ){
+          return element != undefined;
+        });
 
         const filterItem = (curcat) => {
           const newItem = Data.filter((newVal) => {

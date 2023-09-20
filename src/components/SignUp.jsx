@@ -7,6 +7,7 @@ const SignupForm = Userfront.build({
   toolId: "nkordkm"
 });
 
+
 export const SignUpPage = () => (
     <div className='signup'>
       <h1>This is the Sign Up Page</h1>

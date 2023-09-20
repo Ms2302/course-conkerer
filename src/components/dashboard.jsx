@@ -3,6 +3,12 @@ import { Routes, Route, redirect } from 'react-router-dom';
 
 Userfront.init("vndy4rvb");
 
+Userfront.user.update({
+  data: {
+    points: 1
+  }
+})
+
 function Dashboard() {
   if (!Userfront.accessToken()) {
     return <p>Please Log In OR Sign Up</p>;
