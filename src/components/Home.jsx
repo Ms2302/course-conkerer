@@ -1,9 +1,8 @@
 import React from 'react';
-
+//Simple home page 
 const Home = () => {
   return (
     <div id='home' className='w-full h-screen'>
-      {/* Container */}
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
         <h1 className='text-4xl sm:text-7xl font-bold text-[#3e4d6a]'>
           Course Curator

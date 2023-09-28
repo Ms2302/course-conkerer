@@ -1,19 +1,19 @@
 import Userfront from "@userfront/react";
-import { Routes, Route, redirect } from 'react-router-dom';
 
 Userfront.init("vndy4rvb");
-
-Userfront.user.update({
-  data: {
-    points: 1
-  }
-})
 
 function Dashboard() {
   if (!Userfront.accessToken()) {
     return <p>Please Log In OR Sign Up</p>;
   }
-
+  //points are not added to a user initially. This if statement adds the variable "points" to the user if they do not possess it already
+  if (Userfront.user.data.points == undefined) {
+    Userfront.user.update({
+      data: {
+        points: 0
+      }
+    })
+  }
 const userData = JSON.stringify(Userfront.user, null, 2);
 return(
   <div>

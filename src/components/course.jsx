@@ -9,7 +9,7 @@ const Product = () => {
 
         //For some reason the array has an undefined variable so a temporary fix below removes any undefined items
         menuItems = menuItems.filter(function( element ){
-          return element != undefined;
+          return element !== undefined;
         });
 
         const filterItem = (curcat) => {

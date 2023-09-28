@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
 import Userfront from "@userfront/react";
-
+//Nav bar for each page
 Userfront.init("vndy4rvb");
 
 export default function Navbar() {
+  //Navbar will change depending on if user is logged in or not 
   if(!Userfront.accessToken()){
     return (
       <nav className="nav">
@@ -19,6 +20,9 @@ export default function Navbar() {
           </li>
           <li className="nav__item">
             <Link to={"/about"}>About</Link>
+          </li>
+          <li className="nav__item">
+            <Link to={"/questionnaire"}>Questionnaire</Link>
           </li>
           <li className="nav__item">
            <Link to={"/login"}>Log in</Link>
@@ -48,6 +52,9 @@ export default function Navbar() {
           </li>
           <li className="nav__item">
             <Link to={"/about"}>About</Link>
+          </li>
+          <li className="nav__item">
+            <Link to={"/questionnaire"}>Questionnaire</Link>
           </li>
           <li className="nav__item">
             <Link to={"/dashboard"}>Dashboard</Link>

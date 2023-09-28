@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
+//This code is for the "card" that pops out when you view a course
 
 const Card = ({ item }) => {
     const [detail, setDetail] = useState([]);

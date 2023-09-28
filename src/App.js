@@ -6,6 +6,7 @@ import Userfront from "@userfront/react";
 import Dashboard from "./components/dashboard";
 import SignUpPage from "./components/SignUp";
 import LoginPage from "./components/Login";
+import Questionnaire from "./components/Questionnarie";
 import { Routes, Route } from 'react-router-dom';
 
 
@@ -20,12 +21,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/questionnaire' element={Questionnaire}/>
         <Route path='/courses' element={<Product/>} />
         <Route path='/login' element={<LoginPage/>} />
         <Route path='/signUp' element={<SignUpPage/>} />
         <Route path='/dashboard' element={<Dashboard/>} />
 
       </Routes>
+      <Questionnaire></Questionnaire>
     </div>
   );
 }
