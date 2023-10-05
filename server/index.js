@@ -29,6 +29,19 @@ app.post('/signup', (req, res) => {
     })
 })
 
+app.get('/profile', (req, res) => {
+    const username = req.query.user
+    console.log("username" , username)
+    db.query("SELECT points FROM users WHERE username = ?", [username], (err, result) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        if (result){
+            res.send(result)
+        }
+    }) 
+})
+
 app.listen(8080, () => {
     console.log('server listening on port 8080')
 })
