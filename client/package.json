@@ -1,0 +1,68 @@
+{
+  "name": "CourseCurator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@userfront/react": "^0.3.4",
+    "assert": "^2.1.0",
+    "autoprefixer": "^10.4.2",
+    "axios": "^1.5.1",
+    "buffer": "^6.0.3",
+    "mysql": "^2.18.1",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "postcss": "^8.4.8",
+    "process": "^0.11.10",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.14.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.8.6",
+    "survey-react-ui": "^1.9.110",
+    "url": "^0.11.3",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "react-error-overlay": "6.0.9",
+    "tailwindcss": "^3.3.3"
+  },
+  "overrides": {
+    "react-error-overlay": "6.0.9"
+  },
+  "browser": {
+    "crypto": false,
+    "fs": false,
+    "timers": false,
+    "stream": false
+  }
+}
