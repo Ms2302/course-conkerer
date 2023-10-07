@@ -4,6 +4,7 @@ const cors = require('cors');
 const mysql = require('mysql');
 const { error } = require('console');
 const bodyParser = require('body-parser');
+const bcrypt = require('bcrypt');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -17,14 +18,44 @@ const db = mysql.createPool({
     database        : 'coursecurator',
 });
 
+const saltRounds = 10;
+
 app.post('/signup', (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
-    db.query("INSERT INTO users (username, password) VALUES (?, ?)", [username, password], (err, results) => {
+    bcrypt.hash(password, saltRounds, (err, hashedPassword) => {
         if (err){
-            console.log(err)
-        } else {
-            res.send({username: username})
+            res.status(418).send('Could not hash password...')
+        } else{
+            db.query("INSERT INTO users (username, password) VALUES (?, ?)", [username, hashedPassword], (err, results) => {
+                if (err){
+                    res.status(418).send('Could not register user')
+                } else {
+                    res.send({username: username})
+                }
+            })
+        }
+    })
+    
+})
+
+app.post('/signin', (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+    db.query("SELECT * FROM users WHERE username = ?", [username], (err, result) =>{
+        if (err) {
+            res.status(418).send(err.message)
+        } else if (result.length < 1){
+            res.status(418).send("username doesn not match")
+        } else{
+            bcrypt.compare(password, result[0].password, (err, match) => {
+                if (match) {
+                    res.send({username})
+                }
+                if (!match){
+                    res.status(418).send("password did not match")
+                }
+            })
         }
     })
 })

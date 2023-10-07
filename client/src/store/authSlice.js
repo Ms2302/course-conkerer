@@ -12,6 +12,16 @@ export const signup = createAsyncThunk('auth/signup', async({username, password}
     }
 })
 
+export const signin = createAsyncThunk('auth/signin', async({username, password}, thunkAPI) => {
+    try{
+        const res = await axios.post('http://localhost:8080/signin', {username, password})
+        return res.data
+    }
+    catch (err){
+        return thunkAPI.rejectWithValue(err.response.data)
+    }
+})
+
 const initialState = {
     user: '',
     isLoggedIn: false,
@@ -42,6 +52,20 @@ export const authSlice = createSlice({
                 state.loading = true
             })
             .addCase(signup.rejected, (state, action) => {
+                state.loading = false
+                state.isLoggedIn = false
+                state.error = action.payload
+            })
+            .addCase(signin.fulfilled, (state, action) => {
+                state.user = action.payload.username
+                state.isLoggedIn = true
+                state.loading = false
+                state.error = null
+            })
+            .addCase(signin.pending, (state, action) => {
+                state.loading = true
+            })
+            .addCase(signin.rejected, (state, action) => {
                 state.loading = false
                 state.isLoggedIn = false
                 state.error = action.payload

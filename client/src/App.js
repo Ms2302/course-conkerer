@@ -5,7 +5,7 @@ import Product from "./components/course";
 import Userfront from "@userfront/react";
 import Profile from "./components/Profile";
 import SignUpPage from "./components/SignUp";
-import LoginPage from "./components/Login";
+import SignInPage from "./components/Signin";
 import Error from "./components/Error";
 import { Routes, Route } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/courses' element={<Product/>} />
-        <Route path='/login' element={<LoginPage/>} />
+        <Route path='/login' element={<SignInPage/>} />
         <Route path='/signUp' element={<SignUpPage/>} />
         <Route path='/profile' element={<Profile/>} />
         <Route path='*' element={<Error/>}/>

@@ -14,7 +14,7 @@ const dispatch = useDispatch()
 const submitHandler = e => {
   e.preventDefault()
   dispatch(signup({username, password}))
-  .then((res) => {
+  .then(() => {
     setUsername('')
     setPassword('')
   })
