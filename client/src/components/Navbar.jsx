@@ -6,6 +6,8 @@ import { logout } from "../store/authSlice";
 
 export default function Navbar() {
   const loggedIn = useSelector((state) => state.auth.isLoggedIn)
+    const points = useSelector((state) => state.auth.points)
+  
   const dispatch = useDispatch()
 
   //Navbar will change depending on if user is logged in or not 

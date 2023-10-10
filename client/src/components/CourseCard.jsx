@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
-//This code is for the "card" that pops out when you view a course
+import getStars from "./stars";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Card = ({ item }) => {
     const [detail, setDetail] = useState([]);
@@ -24,6 +26,7 @@ const Card = ({ item }) => {
                 detail.map((course) =>
                 {                   
                   if (course.stars !== null){
+                    course.stars = course.stars.replace(/-?\d+(\.\d+)?/g, n => Number(n).toFixed(2))
                     return(
                       <div>
                       <div className="detail_info">
@@ -75,11 +78,13 @@ const Card = ({ item }) => {
         {
 
             if (course.stars !== null){
+              course.stars = course.stars.replace(/-?\d+(\.\d+)?/g, n => Number(n).toFixed(2))
                 return(
+                  
                     <div className="card" key={ course.id }>
                       <div className="background">
                         <strong>{ course.title }</strong><br></br>
-                        <span id="stars">{ course.stars }</span><br></br>
+                        <span id="stars">{course.stars}</span><br></br>
                         <p>Time: { course.time }</p><br></br>
                         
                       </div>

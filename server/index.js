@@ -73,6 +73,20 @@ app.get('/profile', (req, res) => {
     }) 
 })
 
+app.get('/LeaderBoard', (req, res) => {
+    console.log('result')
+    db.query("SELECT username, RANK() OVER ( ORDER BY points DESC) as USER_RANK FROM users;", (err, result) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        if (result){
+            console.log(result)
+            res.send(result)
+        }
+    }) 
+})
+
+
 app.listen(8080, () => {
     console.log('server listening on port 8080')
 })
