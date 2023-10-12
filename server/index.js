@@ -60,6 +60,22 @@ app.post('/signin', (req, res) => {
     })
 })
 
+app.post('/questionnaire', (req, res) => {
+    const username = req.body.user;
+    const answerOne = req.body.answerOne;
+    const answerTwo = req.body.answerTwo;
+    console.log(username,answerOne,answerTwo)
+    db.query("INSERT INTO answers (username, area, Level) VALUES (?, ?, ?)", [username, answerOne, answerTwo], (err) => {
+        if (err){
+            res.status(418).send('Could not submit answers')
+        } else {
+            res.send({username: username ,answerOne: answerOne, answerTwo: answerTwo})
+        }
+    })
+})
+    
+
+
 app.get('/profile', (req, res) => {
     const username = req.query.user
     console.log("username" , username)

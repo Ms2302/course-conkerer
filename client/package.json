@@ -27,7 +27,7 @@
     "react-router-dom": "^6.14.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.6",
-    "survey-react-ui": "^1.9.110",
+    "survey-react-ui": "^1.9.112",
     "url": "^0.11.3",
     "web-vitals": "^2.1.0"
   },

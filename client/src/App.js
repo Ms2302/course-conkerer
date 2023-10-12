@@ -6,6 +6,7 @@ import Userfront from "@userfront/react";
 import Profile from "./components/Profile";
 import SignUpPage from "./components/SignUp";
 import SignInPage from "./components/Signin";
+import Questionnaire from "./components/Questionnarie";
 import Error from "./components/Error";
 import { Routes, Route } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/login' element={<SignInPage/>} />
         <Route path='/signUp' element={<SignUpPage/>} />
         <Route path='/profile' element={<Profile/>} />
+        <Route path='/questionnaire' element={<Questionnaire/>} />
         <Route path='*' element={<Error/>}/>
 
 
