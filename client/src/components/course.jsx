@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from '../data/CourseDetails.json';
+import Data from '../data/test.json';
 import Card from "./CourseCard";
 import Buttons from "./buttons";
 

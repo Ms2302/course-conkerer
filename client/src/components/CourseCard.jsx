@@ -15,63 +15,9 @@ const Card = ({ item }) => {
     }
 
     return(
-        <div className="App">
-        {
-           
-            close ?
-            <div className="detail_container">
-            <div className="detail_content">
-            <button className="close" onClick={() => setClose(false)}><AiFillCloseCircle/></button>
-            {
-                detail.map((course) =>
-                {                   
-                  if (course.stars !== null){
-                    course.stars = course.stars.replace(/-?\d+(\.\d+)?/g, n => Number(n).toFixed(2))
-                    return(
-                      <div>
-                      <div className="detail_info">
-                        <div className="img-box">
-                          <img src="" alt={course.title}></img>
-                        </div>
-                        <div className="course_detail">
-                          <h2>{course.title}</h2>
-                          <h3>{course.time}</h3>
-                          <h3>{course.stars}</h3>
-                        </div>
-                      </div>
-                      <div className="courseLink">
-                        <a href={course.URL} target="_blank">Go To Course</a> 
-                      </div>
-                      </div>
-                      
-                      
-                  )   
-                  }
-                  else{
-                    return(
-                      <div className="detail_info">
-                        <div className="img-box">
-                          <img src="" alt={course.title}></img>
-                        </div>
-                        <div className="course_detail">
-                          <h2>{course.title}</h2>
-                          <p>{course.time}</p>
-                        </div>
-                        <div>
-                        <a className="courseLink" href={course.URL} target="_blank">Go To Course</a> 
-                        </div>
-                      </div>
-                  )   
-                  }
-                  
-                })
-            }
-            </div>
-
-        </div>:null
-        }
 
     <div className="App">
+    
     {
       
         item.map((course) =>
@@ -82,15 +28,15 @@ const Card = ({ item }) => {
                 return(
                   
                     <div className="card" key={ course.id }>
-                      <div className="background">
+                        <img src={course.img} alt={course.title}></img>
                         <strong>{ course.title }</strong><br></br>
                         <span id="stars">{course.stars}</span><br></br>
                         <p>Time: { course.time }</p><br></br>
                         
-                      </div>
-                      <div className="foreground">
-                        <h1>Points: 50</h1>
-                        <button onClick={() => detailPage(course)}>View</button>      
+                      <div className="courseLink">
+                        <span class="btn btn-dark w-75">
+                        <a href={course.URL} target="_blank">Go To Course</a> 
+                      </span>
                       </div>
                     </div>
                   )
@@ -98,21 +44,20 @@ const Card = ({ item }) => {
             else{
                     return(
                         <div className="card" key={ course.id }>
-                          <div className="background">
+                            <img src={course.img} alt={course.title}></img>
                             <strong>{ course.title }</strong><br></br>
                             <p>Time: { course.time }</p><br></br>
                             
-                          </div>
-                          <div className="foreground">
-                            <h1>Points: 50</h1>
-                            <button onClick={() => detailPage(course)}>View</button>      
-                          </div>
+                          <div className="courseLink">
+                          <span class="btn btn-dark  w-75">
+                            <a href={course.URL} target="_blank">Go To Course</a> 
+                          </span>
+                        </div>
                         </div>
                       ) 
             }
         })
     }
-    </div>
     </div>
     )
 }

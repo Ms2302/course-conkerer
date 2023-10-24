@@ -1,5 +1,5 @@
 import React from "react";
-import Data from '../data/CourseDetails.json';
+import Data from '../data/test.json';
  
 const Buttons = ({ filterItem, setItem, menuItems }) => {
   return (
