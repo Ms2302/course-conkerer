@@ -3,14 +3,14 @@ import React from 'react';
 const Home = () => {
   return (
     <div id='home' className='w-full h-screen'>
-      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-        <h1 className='text-4xl sm:text-7xl font-bold text-[#3e4d6a]'>
+      <div id='box'>
+        <h1 className='text-6xl font-bold text-[#000000]'>
           Course Curator
         </h1>
-        <h2 className='text-4xl sm:text-7xl font-bold text-[#5f81b1]'>
+        <h2 className='text-4xl font-bold mt-5 text-[#222831]'>
           The one stop shop for your personal development
         </h2>
-        <div>
+        <div className='mt-6'>
          <a href='courses'>
           <button className='enter'>
             Enter App

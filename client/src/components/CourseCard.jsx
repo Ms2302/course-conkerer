@@ -34,8 +34,8 @@ const Card = ({ item }) => {
                         <p>Time: { course.time }</p><br></br>
                         
                       <div className="courseLink">
-                        <span class="btn btn-dark w-75">
-                        <a href={course.URL} target="_blank">Go To Course</a> 
+                        <span id="course_btn" class="btn btn-dark w-75">
+                        <a href={course.URL} target="_blank" className="text-light">Go To Course</a> 
                       </span>
                       </div>
                     </div>
@@ -50,7 +50,7 @@ const Card = ({ item }) => {
                             
                           <div className="courseLink">
                           <span class="btn btn-dark  w-75">
-                            <a href={course.URL} target="_blank">Go To Course</a> 
+                            <a href={course.URL} target="_blank" className="text-light">Go To Course</a> 
                           </span>
                         </div>
                         </div>

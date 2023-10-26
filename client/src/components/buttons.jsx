@@ -3,11 +3,17 @@ import Data from '../data/test.json';
  
 const Buttons = ({ filterItem, setItem, menuItems }) => {
   return (
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center w-100">
+      <button
+      className="btn-dark text-white mr-10 fw-bold btn"
+      onClick={() => setItem(Data)}
+      >
+      All
+      </button>
         {menuItems.map((Val, id) => {
           return (
             <button
-              className="btn-dark text-white p-1 px-2 mx-5 btn fw-bold"
+              className="btn-dark text-white mr-10  btn fw-bold"
               onClick={() => filterItem(Val)}
               key={id}
             >
@@ -15,12 +21,7 @@ const Buttons = ({ filterItem, setItem, menuItems }) => {
             </button>
           );
         })}
-        <button
-          className="btn-dark text-white p-1 px-3 mx-5 fw-bold btn"
-          onClick={() => setItem(Data)}
-        >
-          All
-        </button>
+
       </div>
   );
 };

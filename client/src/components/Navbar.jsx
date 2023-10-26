@@ -14,7 +14,7 @@ export default function Navbar() {
  
     return (
       <nav className="nav">
-        <Link to="/" className="site-title">
+        <Link to="/" className="site-title" id="logo">
           Course Curator
         </Link>
         { loggedIn ?
@@ -45,9 +45,7 @@ export default function Navbar() {
         <li className="nav__item">
           <Link to={"/about"}>About</Link>
         </li>
-        <li className="nav__item">
-          <Link to={"/questionnaire"}>Questionnaire</Link>
-        </li>
+
         <li className="nav__item"><Link to='/signup'>Sign Up</Link></li>
         <li className="nav__item"><Link to='/login'>Sign In</Link></li>
 
