@@ -30,7 +30,7 @@ export const json = {
         "title": "What Level Courses Are You Looking For?",
         "choices": [
          {
-          "value": "Beginner",
+          "value": "Introductory",
           "text": "Beginner"
          },
          {

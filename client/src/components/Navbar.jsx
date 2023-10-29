@@ -20,7 +20,7 @@ export default function Navbar() {
         { loggedIn ?
         <ul className="nav__list">
           <li className="nav__item">
-            <Link to={"/"}>Home</Link>
+            <Link id="btn" to={"/"}>Home</Link>
           </li>
           <li className="nav__item">
             <Link to={"/courses"}>Courses</Link>
@@ -37,17 +37,17 @@ export default function Navbar() {
         :
         <ul className="nav__list">
         <li className="nav__item">
-          <Link to={"/"}>Home</Link>
+          <Link id="btn" to={"/"}>Home</Link>
         </li>
         <li className="nav__item">
-          <Link to={"/courses"}>Courses</Link>
+          <Link id="btn" to={"/courses"}>Courses</Link>
         </li>
         <li className="nav__item">
-          <Link to={"/about"}>About</Link>
+          <Link id="btn" to={"/about"}>About</Link>
         </li>
 
-        <li className="nav__item"><Link to='/signup'>Sign Up</Link></li>
-        <li className="nav__item"><Link to='/login'>Sign In</Link></li>
+        <li className="nav__item"><Link id="btn" to='/signup'>Sign Up</Link></li>
+        <li className="nav__item"><Link id="btn" to='/login'>Sign In</Link></li>
 
 
         </ul>

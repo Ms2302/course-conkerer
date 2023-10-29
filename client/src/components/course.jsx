@@ -19,6 +19,13 @@ const Product = () => {
           setItem(newItem);
         };
 
+        const filterItems = (category, level) => {
+          const newItem = Data.filter((newVal) =>{
+            return newVal.category === category & newVal.Level === level;
+          });
+          setItem(newItem)
+        }
+
 
     return(
       <div className="container-fluid">
@@ -26,6 +33,7 @@ const Product = () => {
           <h1 className="col-12 text-center my-3 fw-bold">Courses To Choose From</h1>
           <Buttons
             filterItem={filterItem}
+            filterItems={filterItems}
             setItem={setItem}
             menuItems={menuItems}
           />

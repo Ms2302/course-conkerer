@@ -5,14 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Card = ({ item }) => {
-    const [detail, setDetail] = useState([]);
-    const [close, setClose] = useState(false);
-
-    const detailPage = (Product) =>
-    {
-        setDetail([{...Product}])
-        setClose(true)
-    }
 
     return(
 
@@ -32,6 +24,7 @@ const Card = ({ item }) => {
                         <strong>{ course.title }</strong><br></br>
                         <span id="stars">{course.stars}</span><br></br>
                         <p>Time: { course.time }</p><br></br>
+                        <p>{ course.Level } level</p><br></br>
                         
                       <div className="courseLink">
                         <span id="course_btn" class="btn btn-dark w-75">
@@ -47,6 +40,7 @@ const Card = ({ item }) => {
                             <img src={course.img} alt={course.title}></img>
                             <strong>{ course.title }</strong><br></br>
                             <p>Time: { course.time }</p><br></br>
+                            <p>{ course.Level } level</p><br></br>
                             
                           <div className="courseLink">
                           <span class="btn btn-dark  w-75">

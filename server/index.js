@@ -73,7 +73,21 @@ app.post('/questionnaire', (req, res) => {
         }
     })
 })
-    
+
+app.get('/Questions', (req, res) => {
+    const username = req.query.user
+    console.log("username" , username)
+    db.query("SELECT area, Level FROM answers WHERE username = ?", [username], (err, result) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        if (result){
+            res.send(result)
+            console.log(result[0].area)
+        }
+    }) 
+})
+
 
 
 app.get('/profile', (req, res) => {
