@@ -29,21 +29,46 @@ const Profile = () => {
 
   return(
     <div>
-      <h3 className="pb-6 text-2xl text-center text-white">Profile Dashboard</h3>
+      <h1 className="pb-6 text-6xl text-center text-black">Profile Dashboard</h1>
       {user ? 
         <div>
-        <h4 className="text-xl text-center text-blakc">Hi, {user}!</h4>
+        <h3 className="text-xl pt-10 text-center text-5xl  text-black">Hi {user} &#x1F44B;</h3>
         <div>
           {points.map(element => {
-            return <h3 className="text-xl text-center text-black">{"points: " + element.points}</h3>
+            return <h3 className=" text-3xl text-center text-black">Points Earned: &#x2B50; {element.points}</h3>
           })}
         </div>
-        <div>
+        <div className="pt-20">
+        <table className="table table-hover table-striped text-center">
+        <thead className="table-dark">
+          <tr>
+            <th>User</th>
+            <th>Rank</th>
+            <th>Points</th>
+          </tr>
+          </thead>
+          <tbody>
           {rank.map(element =>{
             if(element.username == user){
-              return <h3 className="text-xl text-center text-black">{"You are rank: " + element.USER_RANK}</h3>
+              return(
+                <tr >
+                  <td className="text-success">You</td>
+                  <td>{element.USER_RANK}</td>
+                  <td>{element.points}</td>
+                </tr>
+              ) 
             }
+            else return(
+              <tr>
+                <td>{element.username}</td>
+                <td>{element.USER_RANK}</td>
+                <td>{element.points}</td>
+              </tr>
+            )
           })}
+          </tbody>
+        </table>
+
         </div>
         </div>
         : null}

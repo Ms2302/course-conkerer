@@ -23,16 +23,16 @@ export default function Navbar() {
             <Link id="btn" to={"/"}>Home</Link>
           </li>
           <li className="nav__item">
-            <Link to={"/courses"}>Courses</Link>
+            <Link id="btn" to={"/courses"}>Courses</Link>
           </li>
           <li className="nav__item">
-            <Link to={"/about"}>About</Link>
+            <Link id="btn" to={"/about"}>About</Link>
           </li>
           <li className="nav__item">
-            <Link to={"/questionnaire"}>Questionnaire</Link>
+            <Link id="btn" to={"/questionnaire"}>Questionnaire</Link>
           </li>
-          <li className="nav__item"><Link to='/profile'>Profile</Link></li>
-          <li className="nav__item"><Link to='/' onClick={() => dispatch(logout())}>Logout</Link></li>
+          <li className="nav__item"><Link id="btn" to='/profile'>Profile</Link></li>
+          <li className="nav__item"><Link  id="btn" to='/' onClick={() => dispatch(logout())}>Logout</Link></li>
         </ul>
         :
         <ul className="nav__list">

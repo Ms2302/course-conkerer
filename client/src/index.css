@@ -173,3 +173,15 @@ img{
   background-color: #222831;
   color: #EDEDEE;
 }
+
+.table {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.you{
+  border: 2px #000000 solid;
+  width: 50px;
+  border-radius: 15px;
+}
+
