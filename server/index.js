@@ -83,7 +83,6 @@ app.get('/Questions', (req, res) => {
         }
         if (result){
             res.send(result)
-            console.log(result[0].area)
         }
     }) 
 })
@@ -115,6 +114,30 @@ app.get('/LeaderBoard', (req, res) => {
         }
     }) 
 })
+
+app.get('/data', (req, res)=>{
+    var fs = require('fs')
+    fs.unlink("E:/Course Curator/portfolio-app-react/client/src/data/temp.json",(err)=>{
+    if (err) throw err;
+        console.log("Courses Deleted")
+      })
+    db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img))) from courses INTO OUTFILE 'E:/Course Curator/portfolio-app-react/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
+        if (err){
+            return;
+        }
+        if (result){
+            
+            fs.copyFile("E:/Course Curator/portfolio-app-react/client/src/data/temp.json","E:/Course Curator/portfolio-app-react/client/src/data/test.json",(err)=>{
+                if (err){
+                    console.log("Error Found: ", err);
+                }
+                else{
+                    console.log("Copied")
+                }
+            })
+        }
+        })
+    })
 
 
 app.listen(8080, () => {

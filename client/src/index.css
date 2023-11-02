@@ -130,10 +130,20 @@ img{
 }
 
 
+
+
+
+.loginPage html{
+  height: 100%;
+  margin: 0;
+
+}
 .courseLink{
   text-align: center;
   width: 100%;
-  
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 80px;
 }
 
 .courseLink a{
@@ -142,15 +152,18 @@ img{
   
 }
 
-.loginPage html{
-  height: 100%;
-  margin: 0;
-
-}
-.courseLink{
+.reviewLink{
+  text-align: center;
+  width: 100%;
   position: absolute;
   bottom: 0;
   padding-bottom: 20px;
+}
+
+.reviewLink a{
+  font-size: 1.3em;
+  text-decoration: none;
+  
 }
 
 .courseLink a:hover{

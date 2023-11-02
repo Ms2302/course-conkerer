@@ -1,6 +1,12 @@
 import React from 'react';
+import { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import axios from "axios";
 //Simple home page 
 const Home = () => {
+  useDispatch(useEffect(() => {
+    axios.get('http://localhost:8080/data')
+  }))
   return (
     <div id='home' className='w-full h-screen'>
       <div id='box'>

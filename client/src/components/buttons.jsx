@@ -8,15 +8,18 @@ const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
   const user = useSelector((state) => state.auth.user)
   const [results, setResults] = useState(null)
   const [error, setError] = useState(null)
+  console.log(user)
 
   useDispatch(useEffect(() => {
+
     axios.get('http://localhost:8080/Questions', {params: {user}})
     .then(res => {
       let results = res.data
       setResults(results)
       setError(null)
     }).catch(err => setError("couldnt fetch"))
-  }, [user]))  
+
+  }, [user]))
 
   return (
       <div className="d-flex justify-content-center w-100">
@@ -36,15 +39,21 @@ const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
       : null}
 
         {menuItems.map((Val, id) => {
-          return (
-            <button
-              className="btn-dark text-white mr-10  btn fw-bold"
-              onClick={() => filterItem(Val)}
-              key={id}
-            >
-              {Val}
-            </button>
-          );
+          if (Val !== null){
+            return (
+              <button
+                className="btn-dark text-white mr-10  btn fw-bold"
+                onClick={() => filterItem(Val)}
+                key={id}
+              >
+                {Val}
+              </button>
+            );
+          }
+          else{
+            return;
+          }
+
         })}
 
       </div>

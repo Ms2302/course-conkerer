@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import { AiFillCloseCircle } from "react-icons/ai";
-import getStars from "./stars";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 
 const Card = ({ item }) => {
 
@@ -28,9 +24,14 @@ const Card = ({ item }) => {
                         
                       <div className="courseLink">
                         <span id="course_btn" class="btn btn-dark w-75">
-                        <a href={course.URL} target="_blank" className="text-light">Go To Course</a> 
+                          <a href={course.URL} target="_blank" className="text-light">Go To Course</a> 
                       </span>
                       </div>
+                      <div className="reviewLink">
+                        <span class="btn btn-dark w-75">
+                        <a target="_blank" className="text-light">Review</a> 
+                        </span>
+                    </div>
                     </div>
                   )
             }
@@ -46,8 +47,18 @@ const Card = ({ item }) => {
                           <span class="btn btn-dark  w-75">
                             <a href={course.URL} target="_blank" className="text-light">Go To Course</a> 
                           </span>
+
+                        </div>
+                        <div className="reviewLink">
+                          <span class="btn btn-dark w-75">
+                           <a target="_blank" className="text-light">Review</a> 
+                          </span>
                         </div>
                         </div>
+                        
+      
+
+                        
                       ) 
             }
         })
@@ -55,5 +66,8 @@ const Card = ({ item }) => {
     </div>
     )
 }
+
+
+
 
 export default Card;
