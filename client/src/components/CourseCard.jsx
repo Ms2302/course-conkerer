@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Review from "./reviewModal";
 const Card = ({ item }) => {
 
     return(
@@ -29,7 +29,7 @@ const Card = ({ item }) => {
                       </div>
                       <div className="reviewLink">
                         <span class="btn btn-dark w-75">
-                        <a target="_blank" className="text-light">Review</a> 
+                         <Review id={course.id} courseName={course.title}></Review>                       
                         </span>
                     </div>
                     </div>
@@ -51,7 +51,7 @@ const Card = ({ item }) => {
                         </div>
                         <div className="reviewLink">
                           <span class="btn btn-dark w-75">
-                           <a target="_blank" className="text-light">Review</a> 
+                          <Review id={course.id} courseName={course.title}></Review>
                           </span>
                         </div>
                         </div>
