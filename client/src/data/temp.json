@@ -7,6 +7,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Introduction to AI Applications in Pulmonary Medicine",
+    "rating": 5.046875,
     "category": "AI"
   },
   {
@@ -17,6 +18,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "GameFi in the Web3 World",
+    "rating": 3.8740234375,
     "category": null
   },
   {
@@ -27,6 +29,7 @@
     "Level": "Intermediate",
     "stars": "4.875 out of 5 stars",
     "title": "How to Implement Industry 4.0 Technologies",
+    "rating": 4.71875,
     "category": null
   },
   {
@@ -37,6 +40,7 @@
     "Level": "Intermediate",
     "stars": "3.6 out of 5 stars",
     "title": "Cybercrime Prevention and Protection",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -47,6 +51,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Agile and Continuous Workflows in Localization",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -57,6 +62,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "How to Use a Drone for Security Purposes",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -67,6 +73,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Information Security Management",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -77,6 +84,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Architecting Solutions on AWS",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -87,6 +95,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Doing Business in Web3",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -97,6 +106,7 @@
     "Level": "Intermediate",
     "stars": "4.69767 out of 5 stars",
     "title": "The Laws of Digital Data, Content and Artificial Intelligence (AI)",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -107,6 +117,7 @@
     "Level": "Intermediate",
     "stars": "4.78378 out of 5 stars",
     "title": "Building a Future with Robots",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -117,6 +128,7 @@
     "Level": "Introductory",
     "stars": "4.4375 out of 5 stars",
     "title": "Create Accessible Interfaces",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -127,6 +139,7 @@
     "Level": "Introductory",
     "stars": "4.58824 out of 5 stars",
     "title": "Create Expressive Videogames",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -137,6 +150,7 @@
     "Level": "Intermediate",
     "stars": "4.85 out of 5 stars",
     "title": "Apply Creative Machine Learning",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -147,6 +161,7 @@
     "Level": "Introductory",
     "stars": "4.8 out of 5 stars",
     "title": "Learning in the Network Age",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -157,6 +172,7 @@
     "Level": "Introductory",
     "stars": "4.64286 out of 5 stars",
     "title": "Supercomputing",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -167,6 +183,7 @@
     "Level": "Intermediate",
     "stars": "4.80851 out of 5 stars",
     "title": "Design a Feminist Chatbot",
+    "rating": 3.0,
     "category": "Design"
   },
   {
@@ -177,6 +194,7 @@
     "Level": "Introductory",
     "stars": "4.42857 out of 5 stars",
     "title": "Data Science in the Games Industry",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -187,6 +205,7 @@
     "Level": "Intermediate",
     "stars": "4.67213 out of 5 stars",
     "title": "Understanding Quantum Computers",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -197,6 +216,7 @@
     "Level": "Introductory",
     "stars": "4.64286 out of 5 stars",
     "title": "Construct a Virtual Reality Experience",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -207,6 +227,7 @@
     "Level": "Introductory",
     "stars": "4.63636 out of 5 stars",
     "title": "Technology Entrepreneurship: How to Start a New Venture",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -217,6 +238,7 @@
     "Level": "Intermediate",
     "stars": "4.69565 out of 5 stars",
     "title": "Literature in the Digital Age: from Close Reading to Distant Reading",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -227,6 +249,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Artificial Intelligence (AI) in Hospitality: Challenges and Business Opportunities",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -237,6 +260,7 @@
     "Level": "Intermediate",
     "stars": "4.41176 out of 5 stars",
     "title": "AI for Healthcare: Equipping the Workforce for Digital Transformation",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -247,6 +271,7 @@
     "Level": "Introductory",
     "stars": "4.67442 out of 5 stars",
     "title": "Digital Product Management",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -257,6 +282,7 @@
     "Level": "Introductory",
     "stars": "4.5493 out of 5 stars",
     "title": "Analysing Data in Excel",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -267,6 +293,7 @@
     "Level": "Introductory",
     "stars": "4.71429 out of 5 stars",
     "title": "Excel Skills to Make an Impression",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -277,6 +304,7 @@
     "Level": "Introductory",
     "stars": "4.67925 out of 5 stars",
     "title": "Introduction to Conversational Interfaces",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -287,6 +315,7 @@
     "Level": "Introductory",
     "stars": "4.76667 out of 5 stars",
     "title": "Introduction to Indie Games",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -297,6 +326,7 @@
     "Level": "Introductory",
     "stars": "4.33333 out of 5 stars",
     "title": "The Human Face of User Research: How to do User Research Online and Offline",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -307,6 +337,7 @@
     "Level": "Introductory",
     "stars": "4.63462 out of 5 stars",
     "title": "Introduction to Creative AI",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -317,6 +348,7 @@
     "Level": "Introductory",
     "stars": "4.06383 out of 5 stars",
     "title": "Video Game Design and Development: Introduction to Game Programming",
+    "rating": 3.0,
     "category": "Design"
   },
   {
@@ -327,6 +359,7 @@
     "Level": "Intermediate",
     "stars": "4.26316 out of 5 stars",
     "title": "Video Game Design and Development: A Bit-by-Bit History of Video Game Music: Video Game Sound and Music",
+    "rating": 3.0,
     "category": "Design"
   },
   {
@@ -337,6 +370,7 @@
     "Level": "Introductory",
     "stars": "3.71429 out of 5 stars",
     "title": "Get Started with a Voice Assistant: Developing Alexa Skills",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -347,6 +381,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Using AI to Gain a Competitive Edge for your Customer Experience (CX)",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -357,6 +392,7 @@
     "Level": "Intermediate",
     "stars": "4.72727 out of 5 stars",
     "title": "Fortran for Scientific Computing",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -367,6 +403,7 @@
     "Level": "Introductory",
     "stars": "4.625 out of 5 stars",
     "title": "Introduction to UX Design",
+    "rating": 3.0,
     "category": "Design"
   },
   {
@@ -377,6 +414,7 @@
     "Level": "Intermediate",
     "stars": "4.69231 out of 5 stars",
     "title": "Intelligent Systems: An Introduction to Deep Learning and Autonomous Systems",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -387,6 +425,7 @@
     "Level": "Introductory",
     "stars": "4.7 out of 5 stars",
     "title": "Introduction to Blockchain Technology and Applications",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -397,6 +436,7 @@
     "Level": "Introductory",
     "stars": "4.37037 out of 5 stars",
     "title": "Introduction to Data Analytics with Python",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -407,6 +447,7 @@
     "Level": "Introductory",
     "stars": "4.55 out of 5 stars",
     "title": "Introduction to Programming with Python",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -417,6 +458,7 @@
     "Level": "Introductory",
     "stars": "4.7234 out of 5 stars",
     "title": "Decentralised Finance: Blockchain, Ethereum, and The Future of Banking",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -427,6 +469,7 @@
     "Level": "Introductory",
     "stars": "4.5 out of 5 stars",
     "title": "Software Development Basics",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -437,6 +480,7 @@
     "Level": "Intermediate",
     "stars": "4.09524 out of 5 stars",
     "title": "Mathematics for Computer Science: Essential Skills",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -447,6 +491,7 @@
     "Level": "Intermediate",
     "stars": "4.2 out of 5 stars",
     "title": "People, Networks and Neighbours: Understanding Social Dynamics",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -457,6 +502,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Successful Agile for Digital Teams",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -467,6 +513,7 @@
     "Level": "Introductory",
     "stars": "4.69318 out of 5 stars",
     "title": "Digital Skills: Embracing Digital Technology",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -477,6 +524,7 @@
     "Level": "Introductory",
     "stars": "4.69412 out of 5 stars",
     "title": "IT Ethics: Professionalism and Ethics in Computing",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -487,6 +535,7 @@
     "Level": "Intermediate",
     "stars": "4.8 out of 5 stars",
     "title": "Statistical Shape Modelling: Computing the Human Anatomy",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -497,6 +546,7 @@
     "Level": "Introductory",
     "stars": "4.6 out of 5 stars",
     "title": "AWS Cloud Technical Essentials",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -507,6 +557,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Digital Discovery",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -517,6 +568,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Gender-Inclusive Approaches in Technology",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -527,6 +579,7 @@
     "Level": "Introductory",
     "stars": "5 out of 5 stars",
     "title": "Information Security for Beginners",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -537,6 +590,7 @@
     "Level": "Introductory",
     "stars": "4.8 out of 5 stars",
     "title": "Anti-Racist Approaches in Technology",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -547,6 +601,7 @@
     "Level": "Introductory",
     "stars": "4.75 out of 5 stars",
     "title": "AI for Legal Professionals (I): Law and Policy",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -557,6 +612,7 @@
     "Level": "Introductory",
     "stars": "5 out of 5 stars",
     "title": "Introduction to Microsoft Power Platform for Business",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -567,6 +623,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Supporting Diverse Innovation",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -577,6 +634,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Effective Network Analysis",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -587,6 +645,7 @@
     "Level": "Introductory",
     "stars": "4.73913 out of 5 stars",
     "title": "Being a Digital Researcher: Digital Skills for Effective Research",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -597,6 +656,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Computer Vision: Image Understanding for Efficient Business and Industry",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -607,6 +667,7 @@
     "Level": "Introductory",
     "stars": "4.65426 out of 5 stars",
     "title": "Creating Apps in the Classroom",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -617,6 +678,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Software Development: Understanding Python",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -627,6 +689,7 @@
     "Level": "Intermediate",
     "stars": "4.6 out of 5 stars",
     "title": "AWS Cloud Practitioner Essentials: Jumpstart your journey within the AWS Cloud",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -637,6 +700,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Programming Essentials with Python: Cloud Technology and SaaS",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -647,6 +711,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Programming Essentials with Python: Matplotlib and Seaborn",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -657,6 +722,7 @@
     "Level": "Intermediate",
     "stars": "4.875 out of 5 stars",
     "title": "Programming Applications with Python: Working with Files",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -667,6 +733,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Programming Applications with Python: Graphics User Interface (GUI)",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -677,6 +744,7 @@
     "Level": "Intermediate",
     "stars": "4.875 out of 5 stars",
     "title": "Programming Applications with Python: Libraries and Web Scraping",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -687,6 +755,7 @@
     "Level": "Introductory",
     "stars": "4.875 out of 5 stars",
     "title": "Prepare for a Software Development Career",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -697,6 +766,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Software Development: Introducing Java",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -707,6 +777,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Data Visualisation: Data Dashboards and Storytelling with Tableau",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -717,6 +788,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Data Visualisation: Creating Charts and Complex Visualisations in Tableau",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -727,6 +799,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "AWS: Essential Optimisation for Cloud Cost Management",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -737,6 +810,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Data Visualisation with Tableau Fundamentals",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -747,6 +821,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Future Ready: Designing and Implementing an Azure AI Solution",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -757,6 +832,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Future Ready: Ethics and Law in Data and Analytics",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -767,6 +843,7 @@
     "Level": "Intermediate",
     "stars": "4.875 out of 5 stars",
     "title": "Microsoft Future Ready: Data Science Research Methods Using Python Programming",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -777,6 +854,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Future Ready: Principles of Machine Learning with Python Programming",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -787,6 +865,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Dynamics 365: Working with Power Platform Automation",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -797,6 +876,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Dynamics 365 Fundamentals",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -807,6 +887,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Dynamics 365: Using Power Platform Applications",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -817,6 +898,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Dynamics 365: Testing and Deploying Power Platform Applications",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -827,6 +909,7 @@
     "Level": "Intermediate",
     "stars": "4.875 out of 5 stars",
     "title": "Data Visualisation with Python: Matplotlib and Visual Analysis",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -837,6 +920,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Future Ready: Introduction to Design Thinking",
+    "rating": 3.0,
     "category": "Design"
   },
   {
@@ -847,6 +931,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Dynamics 365: Customer Engagement for Sales",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -857,6 +942,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Dynamics 365: Implementing Power Platform Integrations",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -867,6 +953,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Data Visualisation with Python: Seaborn and Scatter Plots",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -877,6 +964,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Future Ready: Fundamentals of Internet of Things (IoT)",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -887,6 +975,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Future Ready: Fundamentals of Enterprise Security",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -897,6 +986,7 @@
     "Level": "Advanced",
     "stars": "4.875 out of 5 stars",
     "title": "Data Visualisation with Python: Bokeh and Advanced Layouts",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -907,6 +997,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "CRM Fundamentals and Practice: Introduction to Salesforce",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -917,6 +1008,7 @@
     "Level": "Intermediate",
     "stars": "4.57333 out of 5 stars",
     "title": "Google Classroom: Share, Collect, and Manage Student Work Online",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -927,6 +1019,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Microsoft Future Ready: Developing Applications Using Javascript",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -937,6 +1030,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "CRM Fundamentals and Practice: Salesforce Reports, Objects, and Data Management",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -947,6 +1041,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "CRM Fundamentals and Practice: Salesforce Automation and Best Practice",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -957,6 +1052,7 @@
     "Level": "Introductory",
     "stars": "4.57333 out of 5 stars",
     "title": "Google For Education: Staying Organised and Improving Communication",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -967,6 +1063,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Introduction to Application of Robotic Tools",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -977,6 +1074,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Containerised Applications on AWS",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -987,6 +1085,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "The Future of Cyber Security and Emerging Technologies",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -997,6 +1096,7 @@
     "Level": "Introductory",
     "stars": "4.8 out of 5 stars",
     "title": "The Cyber Security Landscape",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1007,6 +1107,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Tools for Robotics",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1017,6 +1118,7 @@
     "Level": "Introductory",
     "stars": "4.5 out of 5 stars",
     "title": "Introduction to Maintenance Engineering",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1027,6 +1129,7 @@
     "Level": "Introductory",
     "stars": "4.68849 out of 5 stars",
     "title": "Introduction to Cyber Security",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1037,6 +1140,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Information Security Policy and Management",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1047,6 +1151,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "System Security Testing and Maintenance",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1057,6 +1162,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Cryptography and Digital Certificates",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1067,6 +1173,7 @@
     "Level": "Introductory",
     "stars": "4.6 out of 5 stars",
     "title": "Introduction to Journalism and Reporting",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1077,6 +1184,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "How Cyber Security Affects the Software Development Life Cycle",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1087,6 +1195,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Build a Physical Computing Prototype",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1097,6 +1206,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Secure System Analysis and Design",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1107,6 +1217,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Security System and Application Development",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1117,6 +1228,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Introduction to Data Analytics for Investment",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1127,6 +1239,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "R for Regression and Machine Learning in Investment",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1137,6 +1250,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Microsoft Azure AI Fundamentals",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1147,6 +1261,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Scaled Agile",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1157,6 +1272,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Microsoft Azure Fundamentals",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1167,6 +1283,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Data Engineering with Microsoft Azure 1",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1177,6 +1294,7 @@
     "Level": "Advanced",
     "stars": null,
     "title": "Advanced Agile with Scrum and Kanban",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1187,6 +1305,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Data Engineering with Microsoft Azure 2",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1197,6 +1316,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Designing Infrastructure Solutions with Microsoft Azure Architecture",
+    "rating": 3.0,
     "category": "Design"
   },
   {
@@ -1207,6 +1327,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Revolucionar la cadena alimentaria mediante la tecnología",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1217,6 +1338,7 @@
     "Level": "Intermediate",
     "stars": "3.9375 out of 5 stars",
     "title": "Introduction to Digital Transformation and E-Commerce",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1227,6 +1349,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Designing Human-Centred AI Products and Services",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1237,6 +1360,7 @@
     "Level": "Introductory",
     "stars": "4.57895 out of 5 stars",
     "title": "The Cyber Security Landscape",
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -1247,6 +1371,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Migrating to the AWS Cloud",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1257,6 +1382,7 @@
     "Level": "Introductory",
     "stars": "4.35185 out of 5 stars",
     "title": "Ethical Hacking: An Introduction",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1267,6 +1393,7 @@
     "Level": "Introductory",
     "stars": "4.59649 out of 5 stars",
     "title": "Begin Robotics",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1277,6 +1404,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "AI For Lawyers (II): Tools for Legal Professionals",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1287,6 +1415,7 @@
     "Level": "Intermediate",
     "stars": "3.88608 out of 5 stars",
     "title": "Artificial Intelligence: Distinguishing Between Fact and Fiction",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1297,6 +1426,7 @@
     "Level": "Introductory",
     "stars": "4.875 out of 5 stars",
     "title": "Introduction to Plant Phenotyping Technologies",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1307,6 +1437,7 @@
     "Level": "Intermediate",
     "stars": "4.47619 out of 5 stars",
     "title": "Applications of AI Technology",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1317,6 +1448,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Precision Medicine and Smart Healthcare: The Industrial Applications",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1327,6 +1459,7 @@
     "Level": "Introductory",
     "stars": "4.76923 out of 5 stars",
     "title": "Understanding the Internet",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1337,6 +1470,7 @@
     "Level": "Intermediate",
     "stars": "4.4 out of 5 stars",
     "title": "Managing Big Data with R and Hadoop",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1347,6 +1481,7 @@
     "Level": "Introductory",
     "stars": "4.61111 out of 5 stars",
     "title": "AI and Big Data in Global Health Improvement",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1357,6 +1492,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "NFTs: A Practical Guide",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1367,6 +1503,7 @@
     "Level": "Introductory",
     "stars": "4.53333 out of 5 stars",
     "title": "Artificial Intelligence (AI) In Healthcare: Opportunities and Challenges",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1377,6 +1514,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Introduction to Forecasting in Business",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1387,6 +1525,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Digital Marketing: New Trends and Technologies",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1397,6 +1536,7 @@
     "Level": "Intermediate",
     "stars": "4.875 out of 5 stars",
     "title": "Introduction to Aviation and Big Data Applications",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1407,6 +1547,7 @@
     "Level": "Intermediate",
     "stars": "4.73333 out of 5 stars",
     "title": "Collaborative Coding with Git",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1417,6 +1558,7 @@
     "Level": "Introductory",
     "stars": "4.63158 out of 5 stars",
     "title": "MedTech: AI and Medical Robots",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1427,6 +1569,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Learn about Current Digital Workplace Trends",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1437,6 +1580,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Responding to a Drone Incident as a First Responder",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1447,6 +1591,7 @@
     "Level": "Introductory",
     "stars": "4.6634 out of 5 stars",
     "title": "Computer Programming for Everyone",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1457,6 +1602,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "AI and Bioinformatics: Genomic Data Analysis",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1467,6 +1613,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Get Creative with People to Solve Problems",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1477,6 +1624,7 @@
     "Level": "Intermediate",
     "stars": "4.6 out of 5 stars",
     "title": "Presenting Your Work with Impact: Presentation Skills Training",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1487,6 +1635,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Safety By Design",
+    "rating": 3.0,
     "category": "Design"
   },
   {
@@ -1497,6 +1646,7 @@
     "Level": "Introductory",
     "stars": "4.35294 out of 5 stars",
     "title": "MedTech: Digital Health and Wearable Technology",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1507,6 +1657,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Functional Programming in Haskell: Supercharge Your Coding",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1517,6 +1668,7 @@
     "Level": "Introductory",
     "stars": "4.57333 out of 5 stars",
     "title": "Generative AI in Higher Education",
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -1527,6 +1679,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Introduction to Blockchain for Business",
+    "rating": 3.0,
     "category": null
   },
   {
@@ -1537,6 +1690,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "Machine Learning for Image Data",
+    "rating": 3.0,
     "category": null
   }
 ]

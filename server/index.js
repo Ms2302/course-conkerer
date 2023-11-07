@@ -74,6 +74,32 @@ app.post('/questionnaire', (req, res) => {
     })
 })
 
+app.post('/rate', (req, res) => {
+    const courseID = parseInt(req.body.id);
+    const rating = parseFloat(req.body.rating);
+    console.log(courseID,rating)
+    db.query("UPDATE courses SET rating = (rating + ?)/2 WHERE id = ?;", [rating, courseID], (err) => {
+        if (err){
+            res.status(418).send('Could not submit answers')
+        } else {
+            res.send("updates")
+        }
+    })
+})
+
+app.post('/addPoints', (req, res) => {
+    const username = req.body.user;
+    const points = parseInt(req.body.points);
+    console.log(username,points)
+    db.query("UPDATE users SET points = (points + ?) WHERE username = ?;", [points, username], (err) => {
+        if (err){
+            res.status(418).send('Could not submit answers')
+        } else {
+            res.send("updates")
+        }
+    })
+})
+
 app.get('/Questions', (req, res) => {
     const username = req.query.user
     console.log("username" , username)
@@ -121,7 +147,7 @@ app.get('/data', (req, res)=>{
     if (err) throw err;
         console.log("Courses Deleted")
       })
-    db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img))) from courses INTO OUTFILE 'E:/Course Curator/portfolio-app-react/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
+    db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img, 'rating', rating))) from courses INTO OUTFILE 'E:/Course Curator/portfolio-app-react/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
         if (err){
             return;
         }

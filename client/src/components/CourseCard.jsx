@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useSelector } from 'react-redux';
+
 import Review from "./reviewModal";
 const Card = ({ item }) => {
+  const user = useSelector((state) => state.auth.user)
 
     return(
 
@@ -18,7 +21,8 @@ const Card = ({ item }) => {
                     <div className="card" key={ course.id }>
                         <img src={course.img} alt={course.title}></img>
                         <strong>{ course.title }</strong><br></br>
-                        <span id="stars">{course.stars}</span><br></br>
+                        <p>Our Rating: {Math.round(course.rating * 100)/100} stars</p>
+                        <span id="stars">Base Rating: {course.stars}</span><br></br>
                         <p>Time: { course.time }</p><br></br>
                         <p>{ course.Level } level</p><br></br>
                         
@@ -28,9 +32,11 @@ const Card = ({ item }) => {
                       </span>
                       </div>
                       <div className="reviewLink">
-                        <span class="btn btn-dark w-75">
+                      {user ?
+                        <span class="btn btn-dark">
                          <Review id={course.id} courseName={course.title}></Review>                       
                         </span>
+                      : null}
                     </div>
                     </div>
                   )
@@ -40,6 +46,7 @@ const Card = ({ item }) => {
                         <div className="card" key={ course.id }>
                             <img src={course.img} alt={course.title}></img>
                             <strong>{ course.title }</strong><br></br>
+                            <p>Our Rating: {Math.round(course.rating * 100)/100} stars</p>
                             <p>Time: { course.time }</p><br></br>
                             <p>{ course.Level } level</p><br></br>
                             
@@ -50,9 +57,11 @@ const Card = ({ item }) => {
 
                         </div>
                         <div className="reviewLink">
-                          <span class="btn btn-dark w-75">
-                          <Review id={course.id} courseName={course.title}></Review>
+                        {user ?
+                          <span class="btn btn-dark">
+                           <Review id={course.id} courseName={course.title}></Review>                       
                           </span>
+                        : null}
                         </div>
                         </div>
                         
