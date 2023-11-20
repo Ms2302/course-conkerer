@@ -19,7 +19,7 @@ const Card = ({ item }) => {
                 return(
                   
                     <div className="card" key={ course.id }>
-                        <img src={course.img} alt={course.title}></img>
+                        <img className="Course_img" src={course.img} alt={course.title}></img>
                         <strong>{ course.title }</strong><br></br>
                         <p>Our Rating: {Math.round(course.rating * 100)/100} stars</p>
                         <span id="stars">Base Rating: {course.stars}</span><br></br>
@@ -44,7 +44,7 @@ const Card = ({ item }) => {
             else{
                     return(
                         <div className="card" key={ course.id }>
-                            <img src={course.img} alt={course.title}></img>
+                            <img className="Course_img" src={course.img} alt={course.title}></img>
                             <strong>{ course.title }</strong><br></br>
                             <p>Our Rating: {Math.round(course.rating * 100)/100} stars</p>
                             <p>Time: { course.time }</p><br></br>

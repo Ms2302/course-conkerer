@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../store/authSlice";
+import logo from "../data/logo.jpg"
 
 //Nav bar for each page
 
@@ -15,7 +16,7 @@ export default function Navbar() {
     return (
       <nav className="nav">
         <Link to="/" className="site-title" id="logo">
-          Course Curator
+          <img src={logo}/>
         </Link>
         { loggedIn ?
         <ul className="nav__list">

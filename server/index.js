@@ -143,10 +143,10 @@ app.get('/LeaderBoard', (req, res) => {
 
 app.get('/data', (req, res)=>{
     var fs = require('fs')
-    fs.unlink("E:/Course Curator/portfolio-app-react/client/src/data/temp.json",(err)=>{
-    if (err) throw err;
-        console.log("Courses Deleted")
-      })
+    try {
+    fs.unlink("E:/Course Curator/portfolio-app-react/client/src/data/temp.json")
+    } catch (ignore){}
+
     db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img, 'rating', rating))) from courses INTO OUTFILE 'E:/Course Curator/portfolio-app-react/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
         if (err){
             return;

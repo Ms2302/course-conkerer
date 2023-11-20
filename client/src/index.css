@@ -15,7 +15,7 @@ html{
 }
 
 body{
-  background: #ffff;
+  background: #e0ebdb;
   font-family: 'Inter', sans-serif;
   height: 100%;
 
@@ -75,7 +75,7 @@ h1{
 }
 
 .nav{
-  background-color: #ffff;
+  background-color: #e0ebdb;
   position: relative;
   width: 100%;
   display: flex;
@@ -92,8 +92,13 @@ h1{
   color: #6b4718;
 }
 
+.site-title:hover{
+  animation: tilt-shaking 0.25s infinite;
+}
+
 .nav ul{
   padding-right: 15px;
+  padding-top: 15px;
   margin: 0;
   list-style: none;
   display: flex;
@@ -124,7 +129,7 @@ h1{
 
 
 
-img{
+.Course_img{
   width: 267.17px;
   height: 150px;
 }
@@ -172,10 +177,12 @@ img{
 
 #box{
   text-align: center;
-  width: 1000px;
+  width: 1900px;
+  height: 750px;
   margin: 0 auto;
   padding-bottom: 200px;
   padding-top: 200px;
+  padding-right: 700px;
 }
 
 #btn{
@@ -183,7 +190,7 @@ img{
 }
 
 #btn:hover{
-  background-color: #222831;
+  background-color: #F2545B;
   color: #EDEDEE;
 }
 
@@ -198,3 +205,17 @@ img{
   border-radius: 15px;
 }
 
+.bg {
+  background-image: url(./data/tree.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
