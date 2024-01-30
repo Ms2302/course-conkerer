@@ -21,7 +21,11 @@ function Review({courseName, id}){
         .then(res=>{
             console.log(res)
         }).catch(err => setError("couldnt fetch")) 
+
+
     }
+
+  
 
       
     return(
@@ -45,9 +49,8 @@ function Review({courseName, id}){
             <output> 5</output>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary text-danger" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary text-primary" >Submit Rating</button>
-              
+              <button type="button" class=" text-danger close" name="close" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary text-primary">Submit Rating</button> 
             </div>
           </div>
         </div>

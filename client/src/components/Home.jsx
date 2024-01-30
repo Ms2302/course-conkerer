@@ -2,13 +2,12 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
-import background from "../data/tree.jpg"
 
 //Simple home page 
 const Home = () => {
-  useDispatch(useEffect(() => {
     axios.get('http://localhost:8080/data')
-  }))
+    console.log("getting data")
+
   return (
 
     <div className='w-full'>
@@ -16,7 +15,7 @@ const Home = () => {
         <h1 className='text-6xl font-bold text-[#F2545B]'>
           Course Conkerer
         </h1>
-        <h2 className='text-4xl font-bold mt-5 text-[#A93F55]'>
+        <h2 className='text-4xl font-bold mt-5 text-[#F2545B]'>
           The one stop shop for your personal development
         </h2>
         <div className='mt-6'>

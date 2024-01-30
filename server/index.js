@@ -142,14 +142,19 @@ app.get('/LeaderBoard', (req, res) => {
 })
 
 app.get('/data', (req, res)=>{
-    var fs = require('fs')
-    try {
-    fs.unlink("E:/Course Curator/portfolio-app-react/client/src/data/temp.json")
-    } catch (ignore){}
-
+    const fs = require('fs')
+    fs.unlink("E:/Course Curator/portfolio-app-react/client/src/data/temp.json", (err, result) =>{
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        if (result){
+            console.log("removed file")
+            res.send(result)
+        }
+    })  
     db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img, 'rating', rating))) from courses INTO OUTFILE 'E:/Course Curator/portfolio-app-react/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
         if (err){
-            return;
+            res.status(418).send('An error occured');
         }
         if (result){
             
@@ -157,8 +162,10 @@ app.get('/data', (req, res)=>{
                 if (err){
                     console.log("Error Found: ", err);
                 }
-                else{
-                    console.log("Copied")
+                if (result){
+                    console.log("copied")
+                    res.send(result)
+
                 }
             })
         }
