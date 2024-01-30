@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Data from '../data/test.json';
-import Card from "./CourseCard";
+import Cards from "./CourseCard";
 import Buttons from "./buttons";
 
 const Product = () => {
@@ -36,7 +36,7 @@ const Product = () => {
             setItem={setItem}
             menuItems={menuItems}
           />
-          <Card item={item}/>
+          <Cards item={item}/>
            
         </div>
       </div>
