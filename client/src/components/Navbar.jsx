@@ -7,7 +7,6 @@ import logo from "../data/logo.jpg"
 
 export default function Navbar() {
   const loggedIn = useSelector((state) => state.auth.isLoggedIn)
-    const points = useSelector((state) => state.auth.points)
   
   const dispatch = useDispatch()
 
@@ -16,22 +15,14 @@ export default function Navbar() {
     return (
       <nav className="nav">
         <Link to="/" className="site-title" id="logo">
-          <img src={logo}/>
+          <img src={logo} alt="logo"/>
         </Link>
         { loggedIn ?
         <ul className="nav__list">
-          <li className="nav__item">
-            <Link id="btn" to={"/"}>Home</Link>
-          </li>
-          <li className="nav__item">
-            <Link id="btn" to={"/courses"}>Courses</Link>
-          </li>
-          <li className="nav__item">
-            <Link id="btn" to={"/about"}>About</Link>
-          </li>
-          <li className="nav__item">
-            <Link id="btn" to={"/questionnaire"}>Questionnaire</Link>
-          </li>
+          <li className="nav__item"><Link id="btn" to={"/"}>Home</Link></li>
+          <li className="nav__item"><Link id="btn" to={"/courses"}>Courses</Link></li>
+          <li className="nav__item"><Link id="btn" to={"/about"}>About</Link></li>
+          <li className="nav__item"><Link id="btn" to={"/questionnaire"}>Questionnaire</Link></li>
           <li className="nav__item"><Link id="btn" to='/profile'>Profile</Link></li>
           <li className="nav__item"><Link  id="btn" to='/' onClick={() => dispatch(logout())}>Logout</Link></li>
         </ul>

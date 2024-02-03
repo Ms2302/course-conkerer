@@ -65,7 +65,7 @@ app.post('/questionnaire', (req, res) => {
     const answerOne = req.body.answerOne;
     const answerTwo = req.body.answerTwo;
     console.log(username,answerOne,answerTwo)
-    db.query("INSERT INTO answers (username, area, Level) VALUES (?, ?, ?)", [username, answerOne, answerTwo], (err) => {
+    db.query("INSERT INTO answers (username, area, Level) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE area = ?, Level = ?", [username, answerOne, answerTwo, answerOne, answerTwo], (err) => {
         if (err){
             res.status(418).send('Could not submit answers')
         } else {

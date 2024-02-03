@@ -1,6 +1,4 @@
 import React from 'react';
-import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 
 //Simple home page 
@@ -10,8 +8,8 @@ const Home = () => {
 
   return (
 
-    <div className='w-full'>
-      <div id='box' className='bg' >
+    <div className='w-full h-screen bg-[#E0EBDB] text-gray-300'>
+      <div id='box' className='flex flex-col mt-10 items-center w-full h-full pt-15' >
         <h1 className='text-6xl font-bold text-[#F2545B]'>
           Course Conkerer
         </h1>

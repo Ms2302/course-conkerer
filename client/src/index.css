@@ -177,12 +177,7 @@ h1{
 
 #box{
   text-align: center;
-  width: 1900px;
-  height: 750px;
   margin: 0 auto;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  padding-right: 700px;
 }
 
 #btn{
@@ -207,8 +202,9 @@ h1{
 
 .bg {
   background-image: url(./data/tree.jpg);
-  background-position: right;
+  background-size: cover;
   background-repeat: no-repeat;
+  
 
 }
 

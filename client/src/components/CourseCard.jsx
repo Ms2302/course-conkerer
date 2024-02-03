@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import Review from "./reviewModal";
@@ -29,7 +29,7 @@ const Cards = ({ item }) => {
                       
                       <div className="courseLink">
                         <span id="course_btn" class="btn btn-dark w-75">
-                          <a href={course.URL} target="_blank" className="text-light">Go To Course</a> 
+                          <a href={course.URL} rel="noreferrer" target="_blank" className="text-light">Go To Course</a> 
                       </span>
                       </div>
                       <div className="reviewLink">
@@ -54,7 +54,7 @@ const Cards = ({ item }) => {
                       
                     <div className="courseLink">
                       <span id="course_btn" class="btn btn-dark w-75">
-                        <a href={course.URL} target="_blank" className="text-light">Go To Course</a> 
+                        <a href={course.URL} rel="noreferrer" target="_blank" className="text-light">Go To Course</a> 
                     </span>
                     </div>
                     <div className="reviewLink">
