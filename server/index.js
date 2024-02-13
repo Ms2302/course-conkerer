@@ -90,7 +90,6 @@ app.post('/rate', (req, res) => {
 app.post('/addPoints', (req, res) => {
     const username = req.body.user;
     const points = parseInt(req.body.points);
-    console.log(username,points)
     db.query("UPDATE users SET points = (points + ?) WHERE username = ?;", [points, username], (err) => {
         if (err){
             res.status(418).send('Could not submit answers')
@@ -99,6 +98,19 @@ app.post('/addPoints', (req, res) => {
         }
     })
 })
+
+app.post('/changeActivityCount', (req, res) => {
+    const username = req.body.user;
+    db.query("UPDATE users SET activitiesToday = (activitiesToday - 1)  WHERE username = username;", [username], (err) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        else{
+            res.send("changed")
+        }
+    }) 
+})
+
 
 app.get('/Questions', (req, res) => {
     const username = req.query.user
@@ -113,7 +125,19 @@ app.get('/Questions', (req, res) => {
     }) 
 })
 
-
+app.get('/tasksLeft', (req, res) => {
+    const username = req.query.user
+    db.query("SELECT activitiesToday FROM users WHERE username = ?", [username], (err, result) => {
+        if (err){
+            
+            res.status(418).send('An error occured')
+        }
+        if (result){
+            console.log("AHHHHhh")
+            res.send(result)
+        }
+    }) 
+})
 
 app.get('/profile', (req, res) => {
     const username = req.query.user

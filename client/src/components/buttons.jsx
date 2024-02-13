@@ -8,7 +8,6 @@ const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
   const user = useSelector((state) => state.auth.user)
   const [results, setResults] = useState(null)
   const [error, setError] = useState(null)
-  console.log(user)
 
   useDispatch(useEffect(() => {
 

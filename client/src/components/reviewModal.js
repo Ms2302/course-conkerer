@@ -4,23 +4,34 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-function Review({courseName, id}){
+function Review({courseName, id,  tasksLeft}){
     const [error, setError] = useState(null)
     const user = useSelector((state) => state.auth.user)
     const points = 25;
-
+  
     function SubmitRating(submitEvent){
-        submitEvent.preventDefault();
-        var rating = submitEvent.target.elements.rating.value
+      submitEvent.preventDefault();
+      var rating = submitEvent.target.elements.rating.value
+      console.log(tasksLeft)
+        if (tasksLeft <= 0){
+          console.log("All tasks completed!")
+        }
+        else{
+
+        axios.post('http://localhost:8080/changeActivityCount', {params: {user}})
+        .then(res=>{
+        }).catch(err => setError("couldn't adjust"))
+
         axios.post('http://localhost:8080/rate', {id,rating})
         .then(res=>{
-            console.log(res)
         }).catch(err => setError("couldnt fetch")) 
 
         axios.post('http://localhost:8080/addPoints',{user, points})
         .then(res=>{
-            console.log(res)
-        }).catch(err => setError("couldnt fetch")) 
+        }).catch(err => setError("couldnt fetch"))
+
+
+      }
 
 
     }

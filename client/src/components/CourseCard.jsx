@@ -1,15 +1,26 @@
-import React from "react";
-import { useSelector } from 'react-redux';
+import { React,useState, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import Review from "./reviewModal";
+import axios from "axios";
 
 const Cards = ({ item }) => {
   const user = useSelector((state) => state.auth.user)
+  const [tasksLeft, setTasksLeft] = useState(null)
+  const [error, setError] = useState(null)
+
+  useDispatch(useEffect(() => {
+  axios.get('http://localhost:8080/tasksLeft', {params: {user}})
+  .then(async res=>{
+    let tasks = await res.data
+    console.log("tasks", tasks[0]["activitiesToday"])
+    setTasksLeft(tasks[0]["activitiesToday"])
+    setError(null)
+    }).catch(err => setError("couldnt fetch"))
+  }, [user]))
 
     return(
-
     <div className="App">
-    
     {
       
         item.map((course) =>
@@ -35,7 +46,7 @@ const Cards = ({ item }) => {
                       <div className="reviewLink">
                       {user ?
                         <span class="btn btn-dark">
-                         <Review id={course.id} courseName={course.title}></Review>                       
+                         <Review id={course.id} courseName={course.title} tasksLeft={tasksLeft}></Review>                       
                         </span>
                       : null}
                     </div>
@@ -60,7 +71,7 @@ const Cards = ({ item }) => {
                     <div className="reviewLink">
                     {user ?
                       <span class="btn btn-dark">
-                       <Review id={course.id} courseName={course.title}></Review>                       
+                       <Review id={course.id} courseName={course.title} tasksLeft={tasksLeft}></Review>                       
                       </span>
                     : null}
                   </div>
