@@ -99,9 +99,22 @@ app.post('/addPoints', (req, res) => {
     })
 })
 
+app.get('/checkActivityCount', (req, res) => {
+    const username = req.query.user;
+    db.query("SELECT activitiesToday FROM users WHERE username = ?;", [username], (err,result) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        else{
+            console.log(result)
+            res.send(result)
+        }
+    }) 
+})
+
 app.post('/changeActivityCount', (req, res) => {
     const username = req.body.user;
-    db.query("UPDATE users SET activitiesToday = (activitiesToday - 1)  WHERE username = username;", [username], (err) => {
+    db.query("UPDATE users SET activitiesToday = (activitiesToday - 1)  WHERE username = ?;", [username], (err) => {
         if (err){
             res.status(418).send('An error occured')
         }

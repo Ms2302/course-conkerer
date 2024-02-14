@@ -5,20 +5,29 @@ import axios from "axios";
 
 
 function Review({courseName, id,  tasksLeft}){
+    const [tasks, SetTasks] = useState(null)
     const [error, setError] = useState(null)
     const user = useSelector((state) => state.auth.user)
     const points = 25;
   
-    function SubmitRating(submitEvent){
+    async function SubmitRating(submitEvent){
       submitEvent.preventDefault();
       var rating = submitEvent.target.elements.rating.value
-      console.log(tasksLeft)
-        if (tasksLeft <= 0){
+      await axios.get('http://localhost:8080/checkActivityCount', {params: {user}})
+      .then(res =>{
+
+        let tasks = res.data[0]["activitiesToday"]
+        SetTasks(tasks)
+        setError(null)
+        console.log("task ", tasks)
+
+        if (tasks <= 0){
+
           console.log("All tasks completed!")
         }
         else{
 
-        axios.post('http://localhost:8080/changeActivityCount', {params: {user}})
+        axios.post('http://localhost:8080/changeActivityCount', {user})
         .then(res=>{
         }).catch(err => setError("couldn't adjust"))
 
@@ -29,15 +38,10 @@ function Review({courseName, id,  tasksLeft}){
         axios.post('http://localhost:8080/addPoints',{user, points})
         .then(res=>{
         }).catch(err => setError("couldnt fetch"))
-
-
       }
-
-
-    }
-
-  
-
+    })}
+      
+      
       
     return(
         <div>
@@ -71,8 +75,7 @@ function Review({courseName, id,  tasksLeft}){
         Review
       </button>
       </div>
-    )
-    
+    )  
 }
 
 export default Review
