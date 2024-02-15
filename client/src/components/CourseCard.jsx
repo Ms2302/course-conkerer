@@ -6,19 +6,9 @@ import axios from "axios";
 
 const Cards = ({ item }) => {
   const user = useSelector((state) => state.auth.user)
-  const [tasksLeft, setTasksLeft] = useState(null)
   const [error, setError] = useState(null)
 
-  useDispatch(useEffect(() => {
-  axios.get('http://localhost:8080/tasksLeft', {params: {user}})
-  .then(async res=>{
-    let tasks = await res.data
-    console.log("tasks", tasks[0]["activitiesToday"])
-    setTasksLeft(tasks[0]["activitiesToday"])
-    setError(null)
-    }).catch(err => setError("couldnt fetch"))
-  }, [user]))
-
+ 
     return(
     <div className="App">
     {
@@ -46,7 +36,7 @@ const Cards = ({ item }) => {
                       <div className="reviewLink">
                       {user ?
                         <span class="btn btn-dark">
-                         <Review id={course.id} courseName={course.title} tasksLeft={tasksLeft}></Review>                       
+                         <Review id={course.id} courseName={course.title}></Review>                       
                         </span>
                       : null}
                     </div>
@@ -71,7 +61,7 @@ const Cards = ({ item }) => {
                     <div className="reviewLink">
                     {user ?
                       <span class="btn btn-dark">
-                       <Review id={course.id} courseName={course.title} tasksLeft={tasksLeft}></Review>                       
+                       <Review id={course.id} courseName={course.title}></Review>                       
                       </span>
                     : null}
                   </div>

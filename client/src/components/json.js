@@ -21,8 +21,21 @@ export const json = {
          {
           "value": "Security",
           "text": "Security"
+         },
+         {
+            "value": "Cloud",
+            "text": "Cloud"
+         },
+         {
+            "value": "Finance",
+            "text": "Finance"
+         },
+         {
+            "value": "Maths",
+            "text": "Maths"
          }
-        ]
+        ],
+        "colCount":2,
        },
        {
         "type": "radiogroup",

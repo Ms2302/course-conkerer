@@ -5,6 +5,7 @@ import axios from "axios";
 const Profile = () => {
   const user = useSelector((state) => state.auth.user)
   const [points, setPoints] = useState([])
+  const [tasks, setTasks] = useState(null)
   const [rank, setRank] = useState([])
   const [error, setError] = useState(null)
 
@@ -27,6 +28,15 @@ const Profile = () => {
     }).catch(err => setError("couldnt fetch"))
   }, [user]))
 
+  useDispatch(useEffect(() => {
+    axios.get('http://localhost:8080/checkActivityCount', {params: {user}})
+    .then(res => {
+      let tasks = res.data[0]['activitiesToday']
+      setTasks(tasks)
+      setError(null)
+    }).catch(err => setError("couldnt fetch"))
+  }, [user]))
+
   return(
     <div>
       <h1 className="pb-6 text-6xl text-center text-black">Profile Dashboard</h1>
@@ -38,6 +48,7 @@ const Profile = () => {
             return <h3 className=" text-3xl text-center text-black">Points Earned: &#x2B50; {element.points}</h3>
           })}
         </div>
+        <div className="pl-60"><h3 className="text-xl pt-10 text-5xl  text-black">Number of tasks left today: {tasks}</h3></div>
         <div className="pt-20">
         <table className="table table-hover table-striped text-center">
         <thead className="table-dark">

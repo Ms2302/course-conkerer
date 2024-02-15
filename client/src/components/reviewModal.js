@@ -1,15 +1,24 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect, useState } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { useState, useEffect } from "react";
 
 import axios from "axios";
 
 
-function Review({courseName, id,  tasksLeft}){
+function Review({courseName, id}){
     const [tasks, SetTasks] = useState(null)
     const [error, setError] = useState(null)
     const user = useSelector((state) => state.auth.user)
     const points = 25;
-  
+    
+    useDispatch(useEffect(() => {
+      axios.get('http://localhost:8080/checkActivityCount', {params: {user}})
+      .then(res => {
+        let tasks = res.data[0]['activitiesToday']
+        SetTasks(tasks)
+        setError(null)
+      }).catch(err => setError("couldnt fetch"))
+    }, [user]))
+
     async function SubmitRating(submitEvent){
       submitEvent.preventDefault();
       var rating = submitEvent.target.elements.rating.value
@@ -17,7 +26,6 @@ function Review({courseName, id,  tasksLeft}){
       .then(res =>{
 
         let tasks = res.data[0]["activitiesToday"]
-        SetTasks(tasks)
         setError(null)
         console.log("task ", tasks)
 
