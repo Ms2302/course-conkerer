@@ -6,7 +6,7 @@ import Userfront from "@userfront/react";
 import Profile from "./components/Profile";
 import SignUpPage from "./components/SignUp";
 import SignInPage from "./components/Signin";
-import Questionnaire from "./components/Questionnarie";
+import Questionnaire from "./components/Questionnaire";
 import Error from "./components/Error";
 import { Routes, Route } from 'react-router-dom';
 
