@@ -7,7 +7,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Introduction to AI Applications in Pulmonary Medicine",
-    "rating": 5.0,
+    "rating": 3.0,
     "category": "AI"
   },
   {
@@ -18,7 +18,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "GameFi in the Web3 World",
-    "rating": 5.0,
+    "rating": 4.5,
     "category": null
   },
   {
@@ -29,7 +29,7 @@
     "Level": "Intermediate",
     "stars": "4.875 out of 5 stars",
     "title": "How to Implement Industry 4.0 Technologies",
-    "rating": 4.375,
+    "rating": 4.0,
     "category": null
   },
   {
@@ -40,7 +40,7 @@
     "Level": "Intermediate",
     "stars": "3.6 out of 5 stars",
     "title": "Cybercrime Prevention and Protection",
-    "rating": 4.988525390625,
+    "rating": 4.5,
     "category": null
   },
   {
@@ -51,7 +51,7 @@
     "Level": "Introductory",
     "stars": null,
     "title": "Agile and Continuous Workflows in Localization",
-    "rating": 4.9921875,
+    "rating": 3.0,
     "category": null
   },
   {
@@ -62,7 +62,7 @@
     "Level": "Intermediate",
     "stars": null,
     "title": "How to Use a Drone for Security Purposes",
-    "rating": 4.984375,
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -73,7 +73,7 @@
     "Level": "Introductory",
     "stars": "4.66667 out of 5 stars",
     "title": "Introduction to Information Security Management",
-    "rating": 4.99609375,
+    "rating": 3.0,
     "category": "Security"
   },
   {
@@ -84,7 +84,7 @@
     "Level": "Intermediate",
     "stars": "4.66667 out of 5 stars",
     "title": "Architecting Solutions on AWS",
-    "rating": 4.9375,
+    "rating": 3.0,
     "category": null
   },
   {
@@ -117,7 +117,7 @@
     "Level": "Intermediate",
     "stars": "4.78378 out of 5 stars",
     "title": "Building a Future with Robots",
-    "rating": 4.5,
+    "rating": 3.0,
     "category": null
   },
   {
@@ -272,7 +272,7 @@
     "stars": "4.67442 out of 5 stars",
     "title": "Digital Product Management",
     "rating": 3.0,
-    "category": null
+    "category": "Management"
   },
   {
     "id": 26,
@@ -800,7 +800,7 @@
     "stars": "4.66667 out of 5 stars",
     "title": "AWS: Essential Optimisation for Cloud Cost Management",
     "rating": 3.0,
-    "category": null
+    "category": "Management"
   },
   {
     "id": 74,
@@ -1031,7 +1031,7 @@
     "stars": null,
     "title": "CRM Fundamentals and Practice: Salesforce Reports, Objects, and Data Management",
     "rating": 3.0,
-    "category": null
+    "category": "Management"
   },
   {
     "id": 95,
@@ -1692,5 +1692,445 @@
     "title": "Machine Learning for Image Data",
     "rating": 3.0,
     "category": null
+  },
+  {
+    "id": 156,
+    "URL": "https://www.coursera.org/professional-certificates/cloud-engineering-gcp",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Preparing for Google Cloud Certification: Cloud Engineer Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 157,
+    "URL": "https://www.coursera.org/professional-certificates/gcp-cloud-architect",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Preparing for Google Cloud Certification: Cloud Architect Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 158,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-z-mainframe",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/e0/3b79a264a94c1e95848e823f90c116/IBM-Logo-Blk-copy.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "IBM z/OS Mainframe Practitioner Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 159,
+    "URL": "https://www.coursera.org/professional-certificates/google-cloud-networking",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "Preparing for Google Cloud Certification: Cloud Network Engineer Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 160,
+    "URL": "https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.6",
+    "title": "Preparing for Google Cloud Certification: Machine Learning Engineer Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 161,
+    "URL": "https://www.coursera.org/professional-certificates/microsoft-cybersecurity-analyst",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/73/8792b24ae547c1a582c33f7ea4d569/Microsoft-logo_rgb_200x43.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Microsoft Cybersecurity Analyst Professional Certificate",
+    "rating": 3.0,
+    "category": "Security"
+  },
+  {
+    "id": 162,
+    "URL": "https://www.coursera.org/professional-certificates/google-cloud-security",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Preparing for Google Cloud Certification: Cloud Security Engineer Professional Certificate",
+    "rating": 3.0,
+    "category": "Security"
+  },
+  {
+    "id": 163,
+    "URL": "https://www.coursera.org/professional-certificates/sre-devops-engineer-google-cloud",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Preparing for Google Cloud Certification: Cloud DevOps Engineer Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 164,
+    "URL": "https://www.coursera.org/professional-certificates/palo-alto-networks-cybersecurity-fundamentals",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/75/05e2905e1c4ab29bd8d2aa8109f951/PAN_Coursera_200x48_2.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.6",
+    "title": "Palo Alto Networks Cybersecurity Professional Certificate",
+    "rating": 3.0,
+    "category": "Security"
+  },
+  {
+    "id": 165,
+    "URL": "https://www.coursera.org/professional-certificates/google-cloud-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "Preparing for Google Cloud Certification: Cloud Developer Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 166,
+    "URL": "https://www.coursera.org/professional-certificates/google-it-automation",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/79e521abf14610b4fec9d677901916/0.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Google IT Automation with Python Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 167,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-applied-devops-engineering",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM Applied DevOps Engineering Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 168,
+    "URL": "https://www.coursera.org/professional-certificates/g-suite-administration",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/7f/db40d0f4a711e6bc06c3b39ee3e5b0/cloud_logo_400x96.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "Google Professional Workspace Administrator Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 169,
+    "URL": "https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dc/92bbf0dede11e8956a710bd6982b76/AWS_logo_RGB.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "Amazon Web Services",
+    "title": "AWS Cloud Solutions Architect  Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 170,
+    "URL": "https://www.coursera.org/professional-certificates/azure-developer-associate",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/73/8792b24ae547c1a582c33f7ea4d569/Microsoft-logo_rgb_200x43.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.6",
+    "title": "Microsoft Azure Developer Associate (AZ-204) Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 171,
+    "URL": "https://www.coursera.org/professional-certificates/microsoft-azure-dp-203-data-engineering",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/73/8792b24ae547c1a582c33f7ea4d569/Microsoft-logo_rgb_200x43.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.3",
+    "title": "Microsoft Azure Data Engineering Associate (DP-203) Professional Certificate",
+    "rating": 3.0,
+    "category": "Cloud"
+  },
+  {
+    "id": 172,
+    "URL": "https://www.coursera.org/professional-certificates/meta-ar-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.5",
+    "title": "Meta AR Developer  Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 173,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-mainframe-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/e0/3b79a264a94c1e95848e823f90c116/IBM-Logo-Blk-copy.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "LearnQuest",
+    "title": "IBM Mainframe Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 174,
+    "URL": "https://www.coursera.org/professional-certificates/akamai-network-engineering",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/56/2fe109bc5e4a60a25e2f111526d461/200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Akamai Network Engineering Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 175,
+    "URL": "https://www.coursera.org/professional-certificates/akamai-customer-consulting-and-support",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/56/2fe109bc5e4a60a25e2f111526d461/200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.9",
+    "title": "Akamai Customer Consulting and Support Professional Certificate",
+    "rating": 3.0,
+    "category": "Consultancy"
+  },
+  {
+    "id": 176,
+    "URL": "https://www.coursera.org/professional-certificates/google-ux-design",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/79e521abf14610b4fec9d677901916/0.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Google UX Design Professional Certificate",
+    "rating": 3.0,
+    "category": "User Experience"
+  },
+  {
+    "id": 177,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-technical-support",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM IT Support  Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 178,
+    "URL": "https://www.coursera.org/professional-certificates/google-it-support",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/79e521abf14610b4fec9d677901916/0.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Google IT Support Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 179,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-backend-development",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM Back-End Development Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 180,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM Full Stack Software Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 181,
+    "URL": "https://www.coursera.org/professional-certificates/backend-javascript-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM Back-end JavaScript Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 182,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM Full-Stack JavaScript Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 183,
+    "URL": "https://www.coursera.org/professional-certificates/meta-android-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "Meta Android Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 184,
+    "URL": "https://www.coursera.org/professional-certificates/meta-database-engineer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.6",
+    "title": "Meta Database Engineer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 185,
+    "URL": "https://www.coursera.org/professional-certificates/sap-technology-consultant",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/5e/9dfbfdefb945918f6d97ca6b2b8a6b/Frame-1-1-.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "SAP",
+    "title": "SAP Technology Consultant  Professional Certificate",
+    "rating": 3.0,
+    "category": "Consultancy"
+  },
+  {
+    "id": 186,
+    "URL": "https://www.coursera.org/professional-certificates/devops-and-software-engineering",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM DevOps and Software Engineering Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 187,
+    "URL": "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "Meta Front-End Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 188,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-frontend-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM Front-End Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 189,
+    "URL": "https://www.coursera.org/professional-certificates/meta-back-end-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "Meta Back-End Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 190,
+    "URL": "https://www.coursera.org/professional-certificates/meta-ios-developer",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dd/9d81501fcf46f7981257ec9f7f5a0a/Metalogo_transparent.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.7",
+    "title": "Meta iOS Developer Professional Certificate",
+    "rating": 3.0,
+    "category": null
+  },
+  {
+    "id": 191,
+    "URL": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/79e521abf14610b4fec9d677901916/0.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.8",
+    "title": "Google Cybersecurity Professional Certificate",
+    "rating": 3.0,
+    "category": "Security"
+  },
+  {
+    "id": 192,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-it-project-manager",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": "IBM IT Project Manager Professional Certificate",
+    "rating": 3.0,
+    "category": "Management"
+  },
+  {
+    "id": 193,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-isc2-cybersecurity-specialist",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=36",
+    "time": null,
+    "Level": null,
+    "stars": "IBM",
+    "title": " IBM and ISC2 Cybersecurity Specialist Professional Certificate",
+    "rating": 3.0,
+    "category": "Security"
+  },
+  {
+    "id": 194,
+    "URL": "https://www.coursera.org/professional-certificates/aws-cloud-technology-consultant",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dc/92bbf0dede11e8956a710bd6982b76/AWS_logo_RGB.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "Amazon Web Services",
+    "title": "AWS Cloud Technology Consultant Professional Certificate",
+    "rating": 3.0,
+    "category": "Consultancy"
+  },
+  {
+    "id": 195,
+    "URL": "https://www.coursera.org/professional-certificates/ibm-cybersecurity-analyst",
+    "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&h=45",
+    "time": null,
+    "Level": null,
+    "stars": "4.6",
+    "title": "IBM Cybersecurity Analyst Professional Certificate",
+    "rating": 3.0,
+    "category": "Security"
   }
 ]

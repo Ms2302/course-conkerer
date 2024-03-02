@@ -119,11 +119,50 @@ app.post('/changeActivityCount', (req, res) => {
             res.status(418).send('An error occured')
         }
         else{
+            console.log("count - 1 ")
             res.send("changed")
         }
     }) 
 })
 
+app.post('/updateTimestamp',(req,res)=>{
+    const sqlTime = req.body.sqlTime;
+    console.log(sqlTime)
+    db.query("update lastrecordeddate SET timestamp = ? where id = 1", [sqlTime], (err) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        else{
+            res.send("changed")
+        }
+    })
+})
+
+app.post('/updateTasks',(req,res)=>{
+    console.log("changing")
+    db.query("update users SET activitiesToday = 5", (err) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        else{
+            res.send("changed")
+        }
+    })
+})
+
+app.get('/getTargetTime', (req, res) => {
+    db.query("SELECT timestamp FROM lastrecordeddate WHERE id = 1", (err, result) => {
+        if (err){
+            console.log("aww")
+            res.status(418).send('An error occured')
+        }
+        if (result){
+            console.log("yay")
+            console.log(result)
+            res.send(result)
+        }
+    }) 
+})
 
 app.get('/Questions', (req, res) => {
     const username = req.query.user
@@ -188,7 +227,9 @@ app.get('/data', (req, res)=>{
             console.log("removed file")
             res.send(result)
         }
-    })  
+    })
+    
+    
     db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img, 'rating', rating))) from courses INTO OUTFILE 'E:/Course Curator/portfolio-app-react/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
         if (err){
             res.status(418).send('An error occured');
