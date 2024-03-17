@@ -1,5 +1,6 @@
 import { React,useState, useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
+import Save from "./saveModal";
 import Card from 'react-bootstrap/Card';
 import Review from "./reviewModal";
 
@@ -24,6 +25,9 @@ const Cards = ({ item }) => {
                   
                     <Card className="card" border="dark" key={ course.id }>
                         <Card.Img className="Course_img" src={course.img} alt={course.title}/>
+                        {user ?
+                          <Save id={course.id} courseName={course.title} courseLink={course.URL}></Save>
+                        : null}
 
                         <Card.Title>{ course.title }</Card.Title><br/>
                         <Card.Text>Our Rating: {Math.round(course.rating * 100)/100} stars</Card.Text>
@@ -37,9 +41,12 @@ const Cards = ({ item }) => {
                       </div>
                       <div className="reviewLink">
                       {user ?
+                        <div>
                         <span class="btn btn-dark">
                          <Review id={course.id} courseName={course.title}></Review>                       
                         </span>
+                        </div>
+ 
                       : null}
                     </div>
                     </Card>

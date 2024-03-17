@@ -87,6 +87,37 @@ app.post('/rate', (req, res) => {
     })
 })
 
+app.post('/saveCourse', (req, res) => {
+    const courseID = parseInt(req.body.id);
+    const courseTitle = req.body.courseName;
+    const courseLink = req.body.courseLink;
+    const user = req.body.user;
+    console.log(courseID,user)
+    db.query("Insert into savedCourse (courseID, username, title, link) values (?,?,?,?);", [courseID, user, courseTitle, courseLink], (err) => {
+        if (err){
+            res.status(418).send('Could not submit savedCourse')
+        } else {
+            res.send("saved!")
+        }
+    })
+})
+
+app.post('/unSaveCourse', (req, res) => {
+    const courseID = parseInt(req.body.id);
+    const user = req.body.user;
+    console.log(courseID,user)
+    db.query("DELETE FROM savedCourse WHERE courseID = ? AND username = ?;", [courseID, user], (err) => {
+        if (err){
+            res.status(418).send('Could not submit savedCourse')
+        } else {
+            res.send("saved!")
+        }
+    })
+})
+
+
+
+
 app.post('/addPoints', (req, res) => {
     const username = req.body.user;
     const points = parseInt(req.body.points);
@@ -102,6 +133,19 @@ app.post('/addPoints', (req, res) => {
 app.get('/checkActivityCount', (req, res) => {
     const username = req.query.user;
     db.query("SELECT activitiesToday FROM users WHERE username = ?;", [username], (err,result) => {
+        if (err){
+            res.status(418).send('An error occured')
+        }
+        else{
+            console.log(result)
+            res.send(result)
+        }
+    }) 
+})
+
+app.get('/getSavedCourses', (req, res) => {
+    const username = req.query.user;
+    db.query("SELECT courseID, title, link FROM savedCourse WHERE username = ?;", [username], (err,result) => {
         if (err){
             res.status(418).send('An error occured')
         }

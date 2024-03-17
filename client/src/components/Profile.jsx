@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { FaRegStar, FaStar } from "react-icons/fa";
+
 import axios from "axios";
+import Card from 'react-bootstrap/Card';
+
 
 const Profile = () => {
   var [target, setTarget] = useState(new Date(''))
@@ -8,6 +12,7 @@ const Profile = () => {
   const [points, setPoints] = useState([])
   const [tasks, setTasks] = useState(null)
   const [rank, setRank] = useState([])
+  const [courses, setCourses] = useState([])
   const [error, setError] = useState(null)
 
 
@@ -58,6 +63,15 @@ const Profile = () => {
       setError(null)
     }).catch(err => setError("couldnt fetch"))
   }, [user]))
+  
+  useDispatch(useEffect(() => {
+    axios.get('http://localhost:8080/getSavedCourses', {params: {user}})
+    .then(res => {
+      let courses = res.data
+      setCourses(courses)
+      setError(null)
+    }).catch(err => setError("couldnt fetch"))
+  }, [user]))
 
   function UpdateTasks(targetTimestamp){
       const sqlTime = targetTimestamp.toISOString().slice(0,19).replace('T', ' ')
@@ -92,6 +106,12 @@ const Profile = () => {
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24)
     return {hours, minutes, seconds}
   }
+
+  async function unsave(id){
+    axios.post('http://localhost:8080/unSaveCourse', {user, id})
+    .then(res =>{
+    setError(null)
+  }).catch(err => setError("couldnt fetch"))}
 
 
   return(
@@ -139,6 +159,28 @@ const Profile = () => {
           </tbody>
         </table>
 
+        </div>
+        <div>
+        <br></br>
+        <h3 className=" text-3xl text-center text-black">Saved Courses</h3>
+        
+        {courses.map(element => {
+          return(
+            <Card className="card" border="dark" key={ element.courseID }>
+            <Card.Title>{ element.title }</Card.Title><br/>
+            <button onClick={() => {
+              unsave(element.courseID)
+            }}>
+              <FaStar className="d-flex text-center"></FaStar>
+            </button>
+            <div className="courseLink">
+            <span id="course_btn" class="btn btn-dark w-75">
+              <a href={element.link} rel="noreferrer" target="_blank" className="text-light">Go To Course</a> 
+            </span>
+            </div>
+        </Card>
+          )
+        })}
         </div>
         </div>
         : null}
