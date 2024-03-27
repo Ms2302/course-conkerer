@@ -15,6 +15,7 @@ export default function Navbar() {
     return (
       <nav className="nav">
         <Link to="/" className="site-title" id="logo">
+        <img src={logo}></img>
         </Link>
         { loggedIn ?
         <ul className="nav__list">

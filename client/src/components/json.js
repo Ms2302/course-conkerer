@@ -5,7 +5,7 @@ export const json = {
       "name": "page1",
       "elements": [
        {
-        "type": "checkbox",
+        "type": "radiogroup",
         "name": "question1",
         "title": "What Kind Of Courses Are You Interested In",
         "isRequired": true,
@@ -35,12 +35,12 @@ export const json = {
             "text": "Maths"
          }
         ],
-        "colCount":2,
        },
        {
         "type": "radiogroup",
         "name": "question2",
         "title": "What Level Courses Are You Looking For?",
+        "isRequired": true,
         "choices": [
          {
           "value": "Introductory",

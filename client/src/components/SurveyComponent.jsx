@@ -15,7 +15,7 @@ function SurveyComponent() {
     survey.onComplete.add((sender) => {
 
         const answers = sender.data;
-        const answerOne = (answers.question1[0])
+        const answerOne = (answers.question1)
         const answerTwo = (answers.question2)
 
         axios.post('http://localhost:8080/questionnaire', {user, answerOne, answerTwo})
