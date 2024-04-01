@@ -42,7 +42,7 @@ function Review({courseName, id}){
         axios.post('http://localhost:8080/rate', {id,rating})
         .then(res=>{
         }).catch(err => setError("couldnt fetch")) 
-
+        
         axios.post('http://localhost:8080/addPoints',{user, points})
         .then(res=>{
         }).catch(err => setError("couldnt fetch"))
