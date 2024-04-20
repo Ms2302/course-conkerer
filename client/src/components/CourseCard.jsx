@@ -5,6 +5,8 @@ import Card from 'react-bootstrap/Card';
 import Review from "./reviewModal";
 
 const Cards = ({ item }) => {
+
+  // Set user state
   const user = useSelector((state) => state.auth.user)
   const [error, setError] = useState(null)
 
@@ -12,7 +14,7 @@ const Cards = ({ item }) => {
     return(
     <div className="App">
     {
-      
+        // Map courses, handle execptions where level or time can be null
         item.map((course) =>
         {
               if(course.Level == null){
@@ -23,6 +25,7 @@ const Cards = ({ item }) => {
               }
                 return(
                   
+                    // Display course data and give unique key
                     <Card className="card" border="dark" key={ course.id }>
                         <Card.Img className="Course_img" src={course.img} alt={course.title}/>
                         {user ?
@@ -40,6 +43,7 @@ const Cards = ({ item }) => {
                       </span>
                       </div>
                       <div className="reviewLink">
+                      {/*If user is logged in, display Review button*/}
                       {user ?
                         <div>
                         <span class="btn btn-dark">

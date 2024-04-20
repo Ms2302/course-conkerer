@@ -1,8 +1,9 @@
 import React from 'react';
 import axios from "axios";
 
-//Simple home page 
 const Home = () => {
+
+    // When application loads, send request to fetch fresh data from database
     axios.get('http://localhost:8080/data')
     console.log("getting data")
 

@@ -7,28 +7,28 @@ import axios from "axios";
 
 function Save({courseName, id, courseLink}){  
     const [error, setError] = useState(null)
-    const [savedState, setSavedState] = useState("click")
     const [icon, setIcon] = useState(FaRegStar)
     const [visible, setVisible] = useState(false)
     const points = 25;
     const user = useSelector((state) => state.auth.user)
 
     const [state, setState] = useState({open: false})
-    const onStateChange = ({open}) => setState({open})
-    const {open} = state
 
+    // Function to change icon to represent saving
     const changeIcon = () => {
         setVisible(!visible)
         setIcon(visible ? FaRegStar : FaStar)
 
     }
 
+    // Post to database which course the user saves
     async function saveCourse(){
         axios.post('http://localhost:8080/saveCourse', {user, id, courseName, courseLink})
         .then(res =>{
         setError(null)
     }).catch(err => setError("couldnt fetch"))
 
+        // Check if user still has tasks left today
         await axios.get('http://localhost:8080/checkActivityCount', {params: {user}})
         .then(res =>{
 
@@ -42,16 +42,20 @@ function Save({courseName, id, courseLink}){
         }
         else{
 
+        // Reduce tasks remaining by 1 for today
         axios.post('http://localhost:8080/changeActivityCount', {user})
         .then(res=>{
         }).catch(err => setError("couldn't adjust"))
 
+        // Award points to the user
         axios.post('http://localhost:8080/addPoints',{user, points})
         .then(res=>{
         }).catch(err => setError("couldnt fetch"))
         }})}
     
     return(
+
+        // Alert users on what they have saved 
         <div>
             <button onClick={() =>{
                 alert("you saved " + courseName + " ID: " + id)

@@ -6,11 +6,12 @@ import Buttons from "./buttons";
 const Product = () => {
         const [item, setItem] = useState(Data);
         var menuItems = [...new Set(Data.map((Val) => Val.category))];
-        //For some reason the array has an undefined variable so a temporary fix below removes any undefined items
+        // The array has an undefined variable so a fix removes any undefined items
         menuItems = menuItems.filter(function( element ){
           return element !== undefined;
         });
-
+        
+        // Filter based on category
         const filterItem = (curcat) => {
           const newItem = Data.filter((newVal) => {
             return newVal.category === curcat;
@@ -18,6 +19,7 @@ const Product = () => {
           setItem(newItem);
         };
 
+        // Filter based on category and level of difficulty
         const filterItems = (category, level) => {
           const newItem = Data.filter((newVal) =>{
             return newVal.category === category & newVal.Level === level;

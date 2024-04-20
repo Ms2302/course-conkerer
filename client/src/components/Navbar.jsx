@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../store/authSlice";
 import logo from "../data/logo.jpg"
 
-//Nav bar for each page
+//Navigation bar for each page
 
 export default function Navbar() {
   const loggedIn = useSelector((state) => state.auth.isLoggedIn)

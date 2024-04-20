@@ -4,13 +4,18 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
 const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
+
+  // Hooks allow components to use local component state
+  // Set user const to who is logged in 
   const user = useSelector((state) => state.auth.user)
   const [results, setResults] = useState(null)
   const [error, setError] = useState(null)
 
   useDispatch(useEffect(() => {
 
+    //axios request to get questionnaire results
     axios.get('http://localhost:8080/Questions', {params: {user}})
     .then(res => {
       let results = res.data
@@ -24,10 +29,14 @@ const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
       <div className="d-flex justify-content-center w-100">
       <button
       className="btn-dark text-white mr-10 fw-bold btn"
+
+      // Filter to all courses
       onClick={() => setItem(Data)}
       >
       All
       </button>
+
+      {/*If user is logged in, display the filter based on questionnaire answers*/}
       {user ?
         <button
         className="btn-dark text-white mr-10 fw-bold btn"
@@ -36,7 +45,7 @@ const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
         Recommended
         </button>
       : null}
-
+        {/*Add a filter button per course category*/}
         {menuItems.map((Val, id) => {
           if (Val !== null){
             return (

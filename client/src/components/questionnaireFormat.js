@@ -1,4 +1,5 @@
-export const json = {
+//Questionnaire JSON
+export const questionnaireJson = {
     "logoPosition": "right",
     "pages": [
      {

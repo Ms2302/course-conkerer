@@ -13,7 +13,6 @@ import { Routes, Route } from 'react-router-dom';
 
 
 
-Userfront.init("vndy4rvb");
 
 function App() {
   

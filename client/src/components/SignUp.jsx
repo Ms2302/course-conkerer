@@ -11,6 +11,7 @@ const user = useSelector((state) => state.auth.user)
 const error = useSelector((state) => state.auth.error)
 const dispatch = useDispatch()
 
+// Sign user up and clear form
 const submitHandler = e => {
   e.preventDefault()
   dispatch(signup({username, password}))

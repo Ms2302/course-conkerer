@@ -10,6 +10,7 @@ function Review({courseName, id}){
     const user = useSelector((state) => state.auth.user)
     const points = 25;
     
+    // Fetch amount of activities user can complete today
     useDispatch(useEffect(() => {
       axios.get('http://localhost:8080/checkActivityCount', {params: {user}})
       .then(res => {
@@ -19,6 +20,7 @@ function Review({courseName, id}){
       }).catch(err => setError("couldnt fetch"))
     }, [user]))
 
+    // Post user rating of course to the database
     async function SubmitRating(submitEvent){
       submitEvent.preventDefault();
       var rating = submitEvent.target.elements.rating.value
@@ -29,20 +31,24 @@ function Review({courseName, id}){
         setError(null)
         console.log("task ", tasks)
 
+        // If user has no tasks left, dont complete review
         if (tasks <= 0){
 
           console.log("All tasks completed!")
         }
         else{
 
+        // Reduce activitiy count by 1 
         axios.post('http://localhost:8080/changeActivityCount', {user})
         .then(res=>{
         }).catch(err => setError("couldn't adjust"))
 
+        // Submit rating of course
         axios.post('http://localhost:8080/rate', {id,rating})
         .then(res=>{
         }).catch(err => setError("couldnt fetch")) 
         
+        // Award user points 
         axios.post('http://localhost:8080/addPoints',{user, points})
         .then(res=>{
         }).catch(err => setError("couldnt fetch"))
@@ -50,7 +56,7 @@ function Review({courseName, id}){
     })}
       
       
-      
+    // Review form modal
     return(
         <div>
         <form onSubmit={SubmitRating}>
