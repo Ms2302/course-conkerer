@@ -3,6 +3,7 @@ import { Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import "survey-core/defaultV2.min.css";
 import { questionnaireJson } from "./questionnaireFormat";
+import { themeJson } from "./theme";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -10,6 +11,7 @@ import axios from "axios";
 // Create survey component
 function SurveyComponent() {
     const survey = new Model(questionnaireJson);
+    survey.applyTheme(themeJson)
     const [error, setError] = useState(null)
     const user = useSelector((state) => state.auth.user)
 

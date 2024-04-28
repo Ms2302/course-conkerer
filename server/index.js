@@ -263,7 +263,7 @@ app.get('/LeaderBoard', (req, res) => {
 
 app.get('/data', (req, res)=>{
     const fs = require('fs')
-    fs.unlink("E:/Course Curator/portfolio-app-react/client/src/data/temp.json", (err, result) =>{
+    fs.unlink("E:/Course Curator/Final-Application/client/src/data/temp.json", (err, result) =>{
         if (err){
             res.status(418).send('An error occured')
         }
@@ -274,13 +274,13 @@ app.get('/data', (req, res)=>{
     })
     
     
-    db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img, 'rating', rating))) from courses INTO OUTFILE 'E:/Course Curator/portfolio-app-react/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
+    db.query("SELECT JSON_PRETTY(JSON_ARRAYAGG(JSON_OBJECT('id', id, 'title', title, 'stars', stars, 'time', time, 'URL', URL, 'Level', Level, 'category', category, 'img', img, 'rating', rating))) from courses INTO OUTFILE 'E:/Course Curator/Final-Application/client/src/data/temp.json' FIELDS Terminated BY '\n' ESCAPED BY '';", (err, result)=>{
         if (err){
             res.status(418).send('An error occured');
         }
         if (result){
             
-            fs.copyFile("E:/Course Curator/portfolio-app-react/client/src/data/temp.json","E:/Course Curator/portfolio-app-react/client/src/data/test.json",(err)=>{
+            fs.copyFile("E:/Course Curator/Final-Application/client/src/data/temp.json","E:/Course Curator/Final-Application/client/src/data/test.json",(err)=>{
                 if (err){
                     console.log("Error Found: ", err);
                 }

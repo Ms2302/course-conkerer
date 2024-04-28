@@ -18,8 +18,15 @@ const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
     //axios request to get questionnaire results
     axios.get('http://localhost:8080/Questions', {params: {user}})
     .then(res => {
-      let results = res.data
-      setResults(results)
+      console.log(res.data)
+      console.log(res.data.length)
+      if (res.data.length != 0){
+        setResults(res.data)
+      }
+      else{ 
+        setResults(null)
+      }
+      
       setError(null)
     }).catch(err => setError("couldnt fetch"))
 
@@ -37,7 +44,7 @@ const Buttons = ({ filterItem, filterItems, setItem, menuItems }) => {
       </button>
 
       {/*If user is logged in, display the filter based on questionnaire answers*/}
-      {user ?
+      {results ?
         <button
         className="btn-dark text-white mr-10 fw-bold btn"
         onClick={() => filterItems(results[0].area, results[0].Level)}

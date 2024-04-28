@@ -23,18 +23,6 @@ export const questionnaireJson = {
           "value": "Security",
           "text": "Security"
          },
-         {
-            "value": "Cloud",
-            "text": "Cloud"
-         },
-         {
-            "value": "Finance",
-            "text": "Finance"
-         },
-         {
-            "value": "Maths",
-            "text": "Maths"
-         }
         ],
        },
        {
